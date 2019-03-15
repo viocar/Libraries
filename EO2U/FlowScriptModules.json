@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "Common library",
+    "ShortName": "Common",
+    "Description": "Non-domain specific commonly used functions.",
+    "ConstantsPath": "",
+    "EnumsPath": "EO2U\\Modules\\Common\\Enums.json",
+    "FunctionsPath": "EO2U\\Modules\\Common\\Functions.json"
+  }
+]

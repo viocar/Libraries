@@ -1,0 +1,3360 @@
+[
+  {
+    "Index": "0x0000",
+    "ReturnType": "int",
+    "Name": "F000",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0001",
+    "ReturnType": "int",
+    "Name": "set_global_flag",
+    "Description": "set a global flag with index param to 1",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "index",
+        "Description": "flag index"
+      }
+    ]
+  },
+  {
+    "Index": "0x0002",
+    "ReturnType": "int",
+    "Name": "F002",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0003",
+    "ReturnType": "int",
+    "Name": "F003",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0004",
+    "ReturnType": "int",
+    "Name": "F004",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0005",
+    "ReturnType": "int",
+    "Name": "F005",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0006",
+    "ReturnType": "int",
+    "Name": "F006",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0007",
+    "ReturnType": "int",
+    "Name": "F007",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0008",
+    "ReturnType": "int",
+    "Name": "F008",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0009",
+    "ReturnType": "int",
+    "Name": "F009",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x000B",
+    "ReturnType": "int",
+    "Name": "F00B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x000C",
+    "ReturnType": "int",
+    "Name": "F00C",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x000D",
+    "ReturnType": "int",
+    "Name": "F00D",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x000E",
+    "ReturnType": "int",
+    "Name": "F00E",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x000F",
+    "ReturnType": "int",
+    "Name": "F00F",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0010",
+    "ReturnType": "int",
+    "Name": "F010",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0011",
+    "ReturnType": "int",
+    "Name": "F011",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0012",
+    "ReturnType": "int",
+    "Name": "F012",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0013",
+    "ReturnType": "int",
+    "Name": "F013",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0014",
+    "ReturnType": "int",
+    "Name": "F014",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0015",
+    "ReturnType": "int",
+    "Name": "F015",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0016",
+    "ReturnType": "int",
+    "Name": "F016",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0017",
+    "ReturnType": "int",
+    "Name": "F017",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0018",
+    "ReturnType": "int",
+    "Name": "F018",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0019",
+    "ReturnType": "int",
+    "Name": "F019",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x001A",
+    "ReturnType": "int",
+    "Name": "F01A",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x001B",
+    "ReturnType": "int",
+    "Name": "F01B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x001C",
+    "ReturnType": "int",
+    "Name": "F01C",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x001D",
+    "ReturnType": "int",
+    "Name": "F01D",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x001E",
+    "ReturnType": "int",
+    "Name": "F01E",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x001F",
+    "ReturnType": "int",
+    "Name": "F01F",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0020",
+    "ReturnType": "int",
+    "Name": "F020",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0021",
+    "ReturnType": "int",
+    "Name": "F021",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0022",
+    "ReturnType": "int",
+    "Name": "F022",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0023",
+    "ReturnType": "int",
+    "Name": "F023",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0024",
+    "ReturnType": "int",
+    "Name": "F024",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0025",
+    "ReturnType": "int",
+    "Name": "F025",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0026",
+    "ReturnType": "int",
+    "Name": "F026",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0027",
+    "ReturnType": "int",
+    "Name": "F027",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0028",
+    "ReturnType": "int",
+    "Name": "F028",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0029",
+    "ReturnType": "int",
+    "Name": "F029",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x002A",
+    "ReturnType": "int",
+    "Name": "F02A",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x002B",
+    "ReturnType": "int",
+    "Name": "F02B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x002C",
+    "ReturnType": "int",
+    "Name": "F02C",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x002D",
+    "ReturnType": "int",
+    "Name": "F02D",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0030",
+    "ReturnType": "int",
+    "Name": "F030",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0031",
+    "ReturnType": "int",
+    "Name": "F031",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0032",
+    "ReturnType": "int",
+    "Name": "F032",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0033",
+    "ReturnType": "int",
+    "Name": "F033",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0034",
+    "ReturnType": "int",
+    "Name": "F034",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0035",
+    "ReturnType": "int",
+    "Name": "F035",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0036",
+    "ReturnType": "int",
+    "Name": "F036",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0037",
+    "ReturnType": "int",
+    "Name": "F037",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0038",
+    "ReturnType": "int",
+    "Name": "F038",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0039",
+    "ReturnType": "int",
+    "Name": "F039",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x003A",
+    "ReturnType": "int",
+    "Name": "F03A",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x003B",
+    "ReturnType": "int",
+    "Name": "F03B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x003C",
+    "ReturnType": "int",
+    "Name": "F03C",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x003D",
+    "ReturnType": "int",
+    "Name": "F03D",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x003E",
+    "ReturnType": "int",
+    "Name": "F03E",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x003F",
+    "ReturnType": "int",
+    "Name": "F03F",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0040",
+    "ReturnType": "int",
+    "Name": "F040",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0041",
+    "ReturnType": "int",
+    "Name": "F041",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0042",
+    "ReturnType": "int",
+    "Name": "F042",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0043",
+    "ReturnType": "int",
+    "Name": "F043",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0044",
+    "ReturnType": "int",
+    "Name": "F044",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0045",
+    "ReturnType": "int",
+    "Name": "F045",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0046",
+    "ReturnType": "int",
+    "Name": "F046",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0047",
+    "ReturnType": "int",
+    "Name": "F047",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0048",
+    "ReturnType": "int",
+    "Name": "F048",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0049",
+    "ReturnType": "int",
+    "Name": "F049",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x004A",
+    "ReturnType": "int",
+    "Name": "F04A",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x004B",
+    "ReturnType": "int",
+    "Name": "F04B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x004C",
+    "ReturnType": "int",
+    "Name": "F04C",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x004D",
+    "ReturnType": "int",
+    "Name": "F04D",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x004E",
+    "ReturnType": "int",
+    "Name": "F04E",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x004F",
+    "ReturnType": "int",
+    "Name": "F04F",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0050",
+    "ReturnType": "int",
+    "Name": "F050",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0051",
+    "ReturnType": "int",
+    "Name": "F051",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0052",
+    "ReturnType": "int",
+    "Name": "F052",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0053",
+    "ReturnType": "int",
+    "Name": "F053",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0054",
+    "ReturnType": "int",
+    "Name": "F054",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0055",
+    "ReturnType": "int",
+    "Name": "F055",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0056",
+    "ReturnType": "int",
+    "Name": "F056",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0057",
+    "ReturnType": "int",
+    "Name": "F057",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0058",
+    "ReturnType": "int",
+    "Name": "F058",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0059",
+    "ReturnType": "int",
+    "Name": "F059",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x005A",
+    "ReturnType": "int",
+    "Name": "F05A",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x005B",
+    "ReturnType": "int",
+    "Name": "F05B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x005C",
+    "ReturnType": "int",
+    "Name": "F05C",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x005D",
+    "ReturnType": "int",
+    "Name": "F05D",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x005E",
+    "ReturnType": "int",
+    "Name": "F05E",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x005F",
+    "ReturnType": "int",
+    "Name": "F05F",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0060",
+    "ReturnType": "int",
+    "Name": "F060",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0061",
+    "ReturnType": "int",
+    "Name": "F061",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0062",
+    "ReturnType": "int",
+    "Name": "F062",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0063",
+    "ReturnType": "int",
+    "Name": "F063",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0064",
+    "ReturnType": "int",
+    "Name": "F064",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0065",
+    "ReturnType": "int",
+    "Name": "F065",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param8",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0066",
+    "ReturnType": "int",
+    "Name": "F066",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0067",
+    "ReturnType": "int",
+    "Name": "F067",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0068",
+    "ReturnType": "int",
+    "Name": "F068",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0069",
+    "ReturnType": "int",
+    "Name": "F069",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x006A",
+    "ReturnType": "int",
+    "Name": "F06A",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x006B",
+    "ReturnType": "int",
+    "Name": "F06B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x006C",
+    "ReturnType": "int",
+    "Name": "F06C",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x006D",
+    "ReturnType": "int",
+    "Name": "F06D",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x006E",
+    "ReturnType": "int",
+    "Name": "F06E",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x006F",
+    "ReturnType": "int",
+    "Name": "F06F",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0070",
+    "ReturnType": "int",
+    "Name": "F070",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0071",
+    "ReturnType": "int",
+    "Name": "F071",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0072",
+    "ReturnType": "int",
+    "Name": "F072",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0073",
+    "ReturnType": "int",
+    "Name": "F073",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0074",
+    "ReturnType": "int",
+    "Name": "F074",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0075",
+    "ReturnType": "int",
+    "Name": "F075",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0076",
+    "ReturnType": "int",
+    "Name": "F076",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0077",
+    "ReturnType": "int",
+    "Name": "F077",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0078",
+    "ReturnType": "int",
+    "Name": "F078",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0079",
+    "ReturnType": "int",
+    "Name": "F079",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x007A",
+    "ReturnType": "int",
+    "Name": "F07A",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x007B",
+    "ReturnType": "int",
+    "Name": "F07B",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x007C",
+    "ReturnType": "int",
+    "Name": "F07C",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x007D",
+    "ReturnType": "int",
+    "Name": "F07D",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0080",
+    "ReturnType": "int",
+    "Name": "rand",
+    "Description": "rolls a random number between 0 and param:upper",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "upper",
+        "Description": "range to roll the number within"
+      }
+    ]
+  },
+  {
+    "Index": "0x0081",
+    "ReturnType": "int",
+    "Name": "set_local_flag",
+    "Description": "sets a local flag of param:index to 1",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "index",
+        "Description": "flag index"
+      }
+    ]
+  },
+  {
+    "Index": "0x0082",
+    "ReturnType": "int",
+    "Name": "clear_local_flag",
+    "Description": "sets a local flag of param:index to 0",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "index",
+        "Description": "flag index"
+      }
+    ]
+  },
+  {
+    "Index": "0x0083",
+    "ReturnType": "bool",
+    "Name": "get_local_flag",
+    "Description": "returns value of local flag of param:index",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "index",
+        "Description": "flag index"
+      }
+    ]
+  },
+  {
+    "Index": "0x0084",
+    "ReturnType": "void",
+    "Name": "clear_all_local_flags",
+    "Description": "sets all local flags to 0",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0085",
+    "ReturnType": "int",
+    "Name": "retrieve",
+    "Description": "retrieves a stored value from param:index",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "index",
+        "Description": "index to store to"
+      }
+    ]
+  },
+  {
+    "Index": "0x0086",
+    "ReturnType": "void",
+    "Name": "store",
+    "Description": "stores param:val into param:index",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "val",
+        "Description": "value to be stored"
+      },
+      {
+        "Type": "int",
+        "Name": "index",
+        "Description": "index to retrieve from"
+      }
+    ]
+  },
+  {
+    "Index": "0x0087",
+    "ReturnType": "int",
+    "Name": "action_count",
+    "Description": "returns number of actions taken by the script owner",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0088",
+    "ReturnType": "int",
+    "Name": "turn_count",
+    "Description": "returns global turn count",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0089",
+    "ReturnType": "int",
+    "Name": "time_of_day",
+    "Description": "returns whether it is dawn (0), day (1), dusk (2), or night (3)",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x008A",
+    "ReturnType": "int",
+    "Name": "get_current_hp_abs",
+    "Description": "gets the script owner's current HP absolute value",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x008B",
+    "ReturnType": "int",
+    "Name": "get_current_hp_pct",
+    "Description": "gets the script owner's current HP percentage",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x008C",
+    "ReturnType": "int",
+    "Name": "get_current_tp_abs",
+    "Description": "gets the script owner's current TP absolute value",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x008D",
+    "ReturnType": "int",
+    "Name": "get_current_tp_pct",
+    "Description": "gets the script owner's current TP percentage",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x008E",
+    "ReturnType": "int",
+    "Name": "set_action_multiple_counter",
+    "Description": "set the counter used in 0xCC (turn_count_multiple_of_value) to param:value",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "value",
+        "Description": "value to set"
+      }
+    ]
+  },
+  {
+    "Index": "0x008F",
+    "ReturnType": "bool",
+    "Name": "input_read_allies_search_damage_type",
+    "Description": "reads allies' inputs and checks if any input a skill with damage type param:type",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "type",
+        "Description": "bit field bit for damage type"
+      }
+    ]
+  },
+  {
+    "Index": "0x0090",
+    "ReturnType": "void",
+    "Name": "action_attack",
+    "Description": "use a basic attack",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0091",
+    "ReturnType": "void",
+    "Name": "action_skill",
+    "Description": "use skill param:skill_id, level 1",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill id"
+      }
+    ]
+  },
+  {
+    "Index": "0x0092",
+    "ReturnType": "void",
+    "Name": "action_escape",
+    "Description": "flee/run away from battle",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0093",
+    "ReturnType": "void",
+    "Name": "action_defend",
+    "Description": "use the defend command",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0094",
+    "ReturnType": "void",
+    "Name": "action_summon_ally",
+    "Description": "summons param:count param:enemy_id to the battle. param3's function is uncertain, but it seems to be a flag for whether the summoner should be replaced by the summoned",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "enemy_id",
+        "Description": "id of enemy"
+      },
+      {
+        "Type": "int",
+        "Name": "count",
+        "Description": "number to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": "kinda weird"
+      }
+    ]
+  },
+  {
+    "Index": "0x0095",
+    "ReturnType": "void",
+    "Name": "action_leveled_skill",
+    "Description": "use skill param:skill_id, param:level",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "level",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0096",
+    "ReturnType": "void",
+    "Name": "action_team_skill",
+    "Description": "perform team skill with param:skill_id, requiring param:count instances of monster param:monsterid",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill to cast"
+      },
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "id of the ally monster required"
+      },
+      {
+        "Type": "int",
+        "Name": "count",
+        "Description": "number of allies needed to cast"
+      }
+    ]
+  },
+  {
+    "Index": "0x0097",
+    "ReturnType": "void",
+    "Name": "action_team_skill_multi_ally",
+    "Description": "perform team skill with param:skill_id, requiring param:count1 instances of monster param:monster_id1 and param:count2 instances of monster param:monster_id2",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill to cast"
+      },
+      {
+        "Type": "int",
+        "Name": "monster_id1",
+        "Description": "id of first required monster"
+      },
+      {
+        "Type": "int",
+        "Name": "count1",
+        "Description": "number of first required monster needed"
+      },
+      {
+        "Type": "int",
+        "Name": "monster_id2",
+        "Description": "id of second required monster"
+      },
+      {
+        "Type": "int",
+        "Name": "count2",
+        "Description": "number of second required monster needed"
+      }
+    ]
+  },
+  {
+    "Index": "0x0098",
+    "ReturnType": "void",
+    "Name": "action_sacrifice_summon",
+    "Description": "removes user from battle and summons param:count instances of param:monster_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "id to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "count",
+        "Description": "number to summon"
+      }
+    ]
+  },
+  {
+    "Index": "0x0099",
+    "ReturnType": "void",
+    "Name": "action_fusion_summon",
+    "Description": "removes param:monster_id1 and param:monster_id2 from battle and summons param:monster_id3. note that this force casts skill 0xD7 (Focus)",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id1",
+        "Description": "first monster required for the fusion"
+      },
+      {
+        "Type": "int",
+        "Name": "monster_id2",
+        "Description": "second monster required for the fusion"
+      },
+      {
+        "Type": "int",
+        "Name": "monster_id3",
+        "Description": "monster to summon"
+      }
+    ]
+  },
+  {
+    "Index": "0x009A",
+    "ReturnType": "void",
+    "Name": "action_throw_ally",
+    "Description": "search for param:monster_id and, if present, if param:targets is 0, use single target throw and if 1, use all-target throw. set skill level to param:skill_level",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "monster to throw"
+      },
+      {
+        "Type": "int",
+        "Name": "targets",
+        "Description": "is it single target or multi-target?"
+      },
+      {
+        "Type": "int",
+        "Name": "skill_level",
+        "Description": "skill level"
+      }
+    ]
+  },
+  {
+    "Index": "0x009B",
+    "ReturnType": "void",
+    "Name": "action_pass",
+    "Description": "pass the turn, taking no action at all",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x009C",
+    "ReturnType": "void",
+    "Name": "action_team_summon",
+    "Description": "summon param:summon_count instances of param:summoned_monster_id. requires param:team_count instances of param:summoning_monster_id, not including the monster performing the summon. param5 and 6 are unknown.",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "summoned_monster_id",
+        "Description": "id of monster to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "summon_count",
+        "Description": "monsters to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "summoning_monster_id",
+        "Description": "monster performing the summon"
+      },
+      {
+        "Type": "int",
+        "Name": "team_count",
+        "Description": "amount of monsters, not counting the summoner, required to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": "unknown"
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": "unknown"
+      }
+    ]
+  },
+  {
+    "Index": "0x009D",
+    "ReturnType": "void",
+    "Name": "target_ally_with_buff",
+    "Description": "search the user's team for people who have param:buff_or_debuff and target the first one found",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "should we search for a buff or a debuff? 1 = buff, anything else = debuff"
+      }
+    ]
+  },
+  {
+    "Index": "0x009E",
+    "ReturnType": "void",
+    "Name": "target_enemy_with_buff",
+    "Description": "search the opposing team for people who have param:buff_or_debuff and target the first one found",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "should we search for a buff or a debuff? 1 = buff, anything else = debuff"
+      }
+    ]
+  },
+  {
+    "Index": "0x009F",
+    "ReturnType": "void",
+    "Name": "target_ally_with_weap_elem_buff",
+    "Description": "searches for allies with elemental weapon enchantments and targets the first one found",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A0",
+    "ReturnType": "void",
+    "Name": "target_standard",
+    "Description": "standard targeting, based on the targeting algorithm",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A1",
+    "ReturnType": "void",
+    "Name": "target_lowest_hp",
+    "Description": "attack the party member with the lowest HP",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A2",
+    "ReturnType": "void",
+    "Name": "target_highest_hp",
+    "Description": "target the party member with the highest HP",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A3",
+    "ReturnType": "void",
+    "Name": "target_lowest_TP",
+    "Description": "target the character with the least TP, respecting the target team of the skill. note: yes, this is how longicorns prioritize cover targets",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A4",
+    "ReturnType": "void",
+    "Name": "target_lowest_TP_copy",
+    "Description": "a complete copy of 0xA3. unused. I suspect this was supposed to be \"target_highest_TP\" but due to a bug, it functions identically to 0xA3",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A5",
+    "ReturnType": "void",
+    "Name": "target_lowest_level",
+    "Description": "target the character with the lowest level",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A6",
+    "ReturnType": "void",
+    "Name": "target_highest_level",
+    "Description": "target the character with the highest level",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A7",
+    "ReturnType": "void",
+    "Name": "target_front_row",
+    "Description": "targets the front row",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A8",
+    "ReturnType": "void",
+    "Name": "target_rear_row",
+    "Description": "targets the rear row",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00A9",
+    "ReturnType": "void",
+    "Name": "target_self",
+    "Description": "targets self",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00AA",
+    "ReturnType": "void",
+    "Name": "target_ally_with_ailment",
+    "Description": "targets an ally with ailment param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bit flag for ailment"
+      }
+    ]
+  },
+  {
+    "Index": "0x00AB",
+    "ReturnType": "void",
+    "Name": "target_enemy_with_ailment",
+    "Description": "targets an enemy with ailment param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bit flag for ailment"
+      }
+    ]
+  },
+  {
+    "Index": "0x00AC",
+    "ReturnType": "void",
+    "Name": "target_ally_without_ailment",
+    "Description": "targets an ally that does not have param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bit flag for ailment"
+      }
+    ]
+  },
+  {
+    "Index": "0x00AD",
+    "ReturnType": "void",
+    "Name": "target_enemy_without_ailment",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bit flag for ailment"
+      }
+    ]
+  },
+  {
+    "Index": "0x00AE",
+    "ReturnType": "void",
+    "Name": "target_class",
+    "Description": "targets player characters with param:class_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "class_id",
+        "Description": "class to be targeted. only applies to mainclass."
+      }
+    ]
+  },
+  {
+    "Index": "0x00AF",
+    "ReturnType": "void",
+    "Name": "target_random_row",
+    "Description": "target a row with no weighted preference",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00B0",
+    "ReturnType": "void",
+    "Name": "target_one_front_and_rear_row",
+    "Description": "selects two targets - one in front and one in back. used for clionean's change skill",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00B1",
+    "ReturnType": "void",
+    "Name": "run_script_at_action_time",
+    "Description": "re-run the script when it's time to act rather than at the beginning of the turn. this allows the AI to react to the events of the turn instead of being locked in at the start.",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00B2",
+    "ReturnType": "void",
+    "Name": "cancel_run_script_at_action_time",
+    "Description": "undoes the effects of 0xB1",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00B3",
+    "ReturnType": "bool",
+    "Name": "action_time_turn",
+    "Description": "checks if this is a standard turn (0) or a turn that is run at action time from 0xB1 (1)",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00B4",
+    "ReturnType": "bool",
+    "Name": "skill_is_castable",
+    "Description": "check if param:skill_id can be cast",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "the skill"
+      }
+    ]
+  },
+  {
+    "Index": "0x00B5",
+    "ReturnType": "bool",
+    "Name": "ally_input_skill_of_damage_type",
+    "Description": "checks other allies if skill of param:damage_type was input",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "damage_type",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x00B6",
+    "ReturnType": "bool",
+    "Name": "allies_on_row_below_hp_threshold",
+    "Description": "checks if any allies on param:row are below param:hp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "hp_percentage",
+        "Description": "amount of health as percentage"
+      },
+      {
+        "Type": "int",
+        "Name": "row",
+        "Description": "0 = any row, 1 = front row, 2 = rear row. will automatically correct to 0 if it's a monster"
+      }
+    ]
+  },
+  {
+    "Index": "0x00B7",
+    "ReturnType": "bool",
+    "Name": "enemies_on_row_below_hp_threshold",
+    "Description": "checks if any enemies on param:row are below param:hp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "hp_percentage",
+        "Description": "amount of health as percentage"
+      },
+      {
+        "Type": "int",
+        "Name": "row",
+        "Description": "0 = any row, 1 = front row, 2 = rear row. will automatically correct to 0 if it's a monster"
+      }
+    ]
+  },
+  {
+    "Index": "0x00B8",
+    "ReturnType": "bool",
+    "Name": "enemy_input_skill_of_damage_type",
+    "Description": "checks if enemies input skill with param:damage_type",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "damage_type",
+        "Description": "1 = cut, 2 = bash, 4 = stab, 8 = fire, 10 = ice, 20 = volt, 40 = almighty"
+      }
+    ]
+  },
+  {
+    "Index": "0x00B9",
+    "ReturnType": "bool",
+    "Name": "enemy_input_skill",
+    "Description": "check if enemies input skill param:skill_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "id of skill"
+      }
+    ]
+  },
+  {
+    "Index": "0x00BA",
+    "ReturnType": "void",
+    "Name": "target_lowest_hp_pct",
+    "Description": "has one decimal place precision",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00BB",
+    "ReturnType": "void",
+    "Name": "target_highest_hp_pct",
+    "Description": "has one decimal place precision",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00BC",
+    "ReturnType": "void",
+    "Name": "target_lowest_tp_pct",
+    "Description": "has one decimal place precision",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00BD",
+    "ReturnType": "void",
+    "Name": "target_lowest_tp_pct",
+    "Description": "probably should have been highest TP percentage",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00BE",
+    "ReturnType": "int",
+    "Name": "action_item",
+    "Description": "uses param:item. does not need to be in the inventory.",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "item",
+        "Description": "item to use"
+      }
+    ]
+  },
+  {
+    "Index": "0x00BF",
+    "ReturnType": "bool",
+    "Name": "specific_ally_has_ailment",
+    "Description": "check param:monster_id for param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "ailment to find"
+      },
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "monster_id to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C0",
+    "ReturnType": "bool",
+    "Name": "self_hp_below_threshold",
+    "Description": "checks if the character's hp percentage is below param:hp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "hp_percentage",
+        "Description": "hp to be below"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C1",
+    "ReturnType": "bool",
+    "Name": "self_tp_below_threshold",
+    "Description": "checks if the character's tp percentage is below param:tp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "tp_percentage",
+        "Description": "tp to be below"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C2",
+    "ReturnType": "bool",
+    "Name": "ally_party_size_lower_than_x",
+    "Description": "checks if there are fewer party members than param:party_size on the team",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "party_size",
+        "Description": "party size to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C3",
+    "ReturnType": "bool",
+    "Name": "enemy_party_size_lower_than_x",
+    "Description": "checks if there are fewer party members than param:party_size on the enemy team",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "party_size",
+        "Description": "party size to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C4",
+    "ReturnType": "bool",
+    "Name": "ally_below_hp_threshold",
+    "Description": "checks if any allies are below param:hp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "hp_percentage",
+        "Description": "hp percentage to be below"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C5",
+    "ReturnType": "bool",
+    "Name": "enemy_below_hp_threshold",
+    "Description": "checks if any enemies are below param:hp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "hp_percentage",
+        "Description": "hp percentage to be below"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C6",
+    "ReturnType": "bool",
+    "Name": "self_ailment_check",
+    "Description": "check self for param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bitflag for ailment to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C7",
+    "ReturnType": "bool",
+    "Name": "ally_ailment_check",
+    "Description": "check all allies for param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bitflag for ailment to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C8",
+    "ReturnType": "bool",
+    "Name": "enemy_ailment_check",
+    "Description": "check all enemies for param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bitflag for ailment to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00C9",
+    "ReturnType": "bool",
+    "Name": "ally_no_ailment_check",
+    "Description": "check all allies and return true if anyone doesn't have param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bitflag to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00CA",
+    "ReturnType": "int",
+    "Name": "enemy_no_ailment_check",
+    "Description": "check all enemies and return true if anyone doesn't have param:ailment",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "bitflag to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00CB",
+    "ReturnType": "bool",
+    "Name": "battle_blindside",
+    "Description": "checks if the player was blindsided this turn",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00CC",
+    "ReturnType": "bool",
+    "Name": "turn_count_multiple_of_value",
+    "Description": "check if turn count is a multiple of param:turn_multiple",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "turn_multiple",
+        "Description": "the multiple to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00CD",
+    "ReturnType": "bool",
+    "Name": "self_has_buff_or_debuff",
+    "Description": "checks if self has param:buff_or_debuff of type param:buff_type",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "is it a buff or a debuff?"
+      },
+      {
+        "Type": "int",
+        "Name": "buff_type",
+        "Description": "type of buff. 0xB = any type"
+      }
+    ]
+  },
+  {
+    "Index": "0x00CE",
+    "ReturnType": "int",
+    "Name": "self_count_buff_or_debuff",
+    "Description": "counts number of param:buff_or_debuff of type param:buff_type on self",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "is it a buff or a debuff?"
+      },
+      {
+        "Type": "int",
+        "Name": "buff_type",
+        "Description": "type of buff. 0xB = any type"
+      }
+    ]
+  },
+  {
+    "Index": "0x00CF",
+    "ReturnType": "int",
+    "Name": "ally_count_buff_or_debuff",
+    "Description": "counts number of param:buff_or_debuff of type param:buff_type on allies",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "is it a buff or a debuff?"
+      },
+      {
+        "Type": "int",
+        "Name": "buff_type",
+        "Description": "type of buff. 0xB = any type"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D0",
+    "ReturnType": "int",
+    "Name": "enemy_count_buff_or_debuff",
+    "Description": "counts number of param:buff_or_debuff of type param:buff_type on enemies",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "is it a buff or a debuff?"
+      },
+      {
+        "Type": "int",
+        "Name": "buff_type",
+        "Description": "type of buff. 0xB = any type"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D1",
+    "ReturnType": "bool",
+    "Name": "monster_exists",
+    "Description": "search all allies for param:monster_id and return true if it is found",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "monster id to find"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D2",
+    "ReturnType": "int",
+    "Name": "current_floor",
+    "Description": "returns the current floor we're on. returns 0 during a sea quest (?)",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00D3",
+    "ReturnType": "bool",
+    "Name": "ally_has_buff_or_debuff",
+    "Description": "checks if any allies have param:buff_or_debuff of type param:buff_type",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "is it a buff or a debuff?"
+      },
+      {
+        "Type": "int",
+        "Name": "buff_type",
+        "Description": "type of buff. 0xB = any type"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D4",
+    "ReturnType": "int",
+    "Name": "enemy_has_buff_or_debuff",
+    "Description": "checks if any enemies have param:buff_or_debuff of type param:buff_type",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "is it a buff or a debuff?"
+      },
+      {
+        "Type": "int",
+        "Name": "buff_type",
+        "Description": "type of buff. 0xB = any type"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D5",
+    "ReturnType": "int",
+    "Name": "count_ally_by_type",
+    "Description": "counts the number of ally of param:monster_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "monster id to count"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D6",
+    "ReturnType": "bool",
+    "Name": "narmer_can_dive",
+    "Description": "check if narmer can dive. params should always be 0,2",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "offset",
+        "Description": "narmer dive offset"
+      },
+      {
+        "Type": "int",
+        "Name": "flag",
+        "Description": "narmer dive bitflag"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D7",
+    "ReturnType": "void",
+    "Name": "allow_narmer_to_dive",
+    "Description": "clears the state that prevents narmer from diving. params should always be 0,2",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "offset",
+        "Description": "narmer dive offset"
+      },
+      {
+        "Type": "int",
+        "Name": "flag",
+        "Description": "narmer dive bitflag"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D8",
+    "ReturnType": "int",
+    "Name": "ally_is_using_skill",
+    "Description": "reads input of allies and checks if another ally is using param:skill_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill id to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00D9",
+    "ReturnType": "bool",
+    "Name": "damage_type_of_skill_most_recently_hit_by",
+    "Description": "checks the damage type of the skill golem was most recently hit by and compares it against param:damage_type",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "damage_type",
+        "Description": "damage type to check. IMPORTANT NOTE: this is shifted left from normal (so fire is 0x10, ice is 0x20, volt is 0x40, etc.)"
+      }
+    ]
+  },
+  {
+    "Index": "0x00DA",
+    "ReturnType": "bool",
+    "Name": "in_row",
+    "Description": "checks if character is in param:row",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "row",
+        "Description": "0 = front, 1 = rear"
+      }
+    ]
+  },
+  {
+    "Index": "0x00DB",
+    "ReturnType": "int",
+    "Name": "count_allies_in_row",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "row",
+        "Description": "0 = front, 1 = rear"
+      }
+    ]
+  },
+  {
+    "Index": "0x00DC",
+    "ReturnType": "bool",
+    "Name": "ally_below_tp_threshold",
+    "Description": "checks if any allies are below param:tp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "tp_percentage",
+        "Description": "percentage of tp to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00DD",
+    "ReturnType": "int",
+    "Name": "hp_pct_of_specified_ally",
+    "Description": "returns the hp percentage of param:ally_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ally_id",
+        "Description": "ally to get the hp percentage of"
+      }
+    ]
+  },
+  {
+    "Index": "0x00DE",
+    "ReturnType": "int",
+    "Name": "tp_pct_of_specified_ally",
+    "Description": "returns the tp percentage of param:ally_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ally_id",
+        "Description": "ally to get the tp percentage of"
+      }
+    ]
+  },
+  {
+    "Index": "0x00DF",
+    "ReturnType": "bool",
+    "Name": "ally_has_ailment_at_action_time",
+    "Description": "same as 0xBF except it's also checked at action time. I think. I'm not actually certain but it's unused in EO3",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "ailment to check for"
+      },
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "monster to check for"
+      }
+    ]
+  },
+  {
+    "Index": "0x00E0",
+    "ReturnType": "void",
+    "Name": "target_specific_unit",
+    "Description": "target unit with id param:unit_id. respects the skill's team target. also seems to have a 0xB1 element? I don't know.",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "unit_id",
+        "Description": "unit to target"
+      }
+    ]
+  },
+  {
+    "Index": "0x00E1",
+    "ReturnType": "bool",
+    "Name": "ally_alive",
+    "Description": "check if param:ally_id is alive",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ally_id",
+        "Description": "id of ally to target"
+      }
+    ]
+  },
+  {
+    "Index": "0x00E2",
+    "ReturnType": "int",
+    "Name": "count_bunshin_clones",
+    "Description": "returns number of bunshin clones",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00E3",
+    "ReturnType": "bool",
+    "Name": "self_has_buff_or_debuff_from_skill",
+    "Description": "checks if user has param:buff_or_debuff from param:skill_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "0 = buff, 1 = debuff"
+      },
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill which has the buff/debuff"
+      }
+    ]
+  },
+  {
+    "Index": "0x00E4",
+    "ReturnType": "bool",
+    "Name": "ally_has_buff_or_debuff_from_skill",
+    "Description": "checks if any ally has param:buff_or_debuff from param:skill_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "0 = buff, 1 = debuff"
+      },
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill which has the buff/debuff"
+      }
+    ]
+  },
+  {
+    "Index": "0x00E5",
+    "ReturnType": "bool",
+    "Name": "enemy_has_buff_or_debuff_from_skill",
+    "Description": "checks if any enemy has param:buff_or_debuff from param:skill_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "buff_or_debuff",
+        "Description": "0 = buff, 1 = debuff"
+      },
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill which has the buff/debuff"
+      }
+    ]
+  },
+  {
+    "Index": "0x00E6",
+    "ReturnType": "bool",
+    "Name": "has_active_beast",
+    "Description": "checks if the wildling has a beast active",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00E7",
+    "ReturnType": "bool",
+    "Name": "beast_hp_below_threshold",
+    "Description": "check if the user's beast's hp is below param:hp_percentage",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "hp_percentage",
+        "Description": "health to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00E8",
+    "ReturnType": "void",
+    "Name": "target_beast",
+    "Description": "target's the owner's beast",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00E9",
+    "ReturnType": "void",
+    "Name": "do_not_retarget",
+    "Description": "don't attempt to retarget the skill use at action time",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00EA",
+    "ReturnType": "int",
+    "Name": "count_enemies_by_type",
+    "Description": "counts the number of enemies with param:monster_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "id to check"
+      }
+    ]
+  },
+  {
+    "Index": "0x00EB",
+    "ReturnType": "int",
+    "Name": "hp_pct_of_specified_enemy",
+    "Description": "returns the hp percentage of param:enemy_id. this function only works on monsters I think",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "enemy_id",
+        "Description": "ally to get the hp percentage of"
+      }
+    ]
+  },
+  {
+    "Index": "0x00EC",
+    "ReturnType": "void",
+    "Name": "do_nothing_and_display_message",
+    "Description": "pass turn and display param:message_id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "message_id",
+        "Description": "message to display"
+      }
+    ]
+  },
+  {
+    "Index": "0x00ED",
+    "ReturnType": "bool",
+    "Name": "is_ally_being_targeted",
+    "Description": "I'm not 100% sure about this but I think it checks if any enemy is using an offensive move",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00EE",
+    "ReturnType": "bool",
+    "Name": "target_ally_being_targeted",
+    "Description": "target an ally who is the target of an enemy",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00EF",
+    "ReturnType": "int",
+    "Name": "remove_ailment_at_eot",
+    "Description": "removes param:ailment at end of turn",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "ailment to remove"
+      }
+    ]
+  },
+  {
+    "Index": "0x00F0",
+    "ReturnType": "void",
+    "Name": "pasaran_transform",
+    "Description": "display param:message then transform into param:count instances of param:monster_id. message after transform will always be \"$MONSTER lowered its hand.\"",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "id of monster to transform into"
+      },
+      {
+        "Type": "int",
+        "Name": "count",
+        "Description": "monsters to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "success",
+        "Description": "whether it works or not, I think"
+      },
+      {
+        "Type": "int",
+        "Name": "message",
+        "Description": "message to display"
+      }
+    ]
+  },
+  {
+    "Index": "0x00F1",
+    "ReturnType": "int",
+    "Name": "abyssal_god_tentacle_count",
+    "Description": "returns the number of tentacles alive",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00F2",
+    "ReturnType": "int",
+    "Name": "cast_regenerator_and_spawn_tentacle",
+    "Description": "abyssal god function",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x00F3",
+    "ReturnType": "int",
+    "Name": "abyssal_god_transform",
+    "Description": "transforms abyssal god between offense and defense forms",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "destination_form",
+        "Description": "the monster to transform int"
+      },
+      {
+        "Type": "int",
+        "Name": "current_form",
+        "Description": "the current form"
+      }
+    ]
+  },
+  {
+    "Index": "0x00F4",
+    "ReturnType": "int",
+    "Name": "hp_pct_of_specified_ally",
+    "Description": "returns the hp percentage of param:ally_id. this function only works on monsters I think",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ally_id",
+        "Description": "monster to get the hp percentage of"
+      }
+    ]
+  },
+  {
+    "Index": "0x00F5",
+    "ReturnType": "int",
+    "Name": "transform_with_messages",
+    "Description": "summons param:count instances of param:monster_id. displays param:pre_message_id before the transformation and param:post_message_id after the transform.",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "monster to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "count",
+        "Description": "how many to summon"
+      },
+      {
+        "Type": "int",
+        "Name": "success",
+        "Description": "whether it works or not I think"
+      },
+      {
+        "Type": "int",
+        "Name": "pre_message_id",
+        "Description": "message that plays before the monster is spawned"
+      },
+      {
+        "Type": "int",
+        "Name": "post_message_id",
+        "Description": "message that plays after the monster is spawned"
+      }
+    ]
+  },
+  {
+    "Index": "0x0150",
+    "ReturnType": "int",
+    "Name": "F150",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0151",
+    "ReturnType": "int",
+    "Name": "F151",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0152",
+    "ReturnType": "int",
+    "Name": "F152",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0153",
+    "ReturnType": "int",
+    "Name": "F153",
+    "Description": "",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0154",
+    "ReturnType": "int",
+    "Name": "F154",
+    "Description": "",
+    "Parameters": [
+    ]
+  }
+]

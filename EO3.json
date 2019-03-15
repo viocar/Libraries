@@ -1,0 +1,6 @@
+{
+  "Name": "Etrian Odyssey III/Sekaiju no Meikyuu III",
+  "ShortName": "eo3",
+  "FlowScriptLibraryRegistryPath": "EO3\\FlowScriptLibraries.json",
+  "MessageScriptLibraryPath": ""
+}

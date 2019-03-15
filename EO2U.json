@@ -1,0 +1,6 @@
+{
+  "Name": "Etrian Odyssey II Untold: The Fafnir Knight/Shin Sekaiju no Meikyuu II: Fafuniiru no Kishi",
+  "ShortName": "eo2u",
+  "FlowScriptModulesPath": "EO2U\\FlowScriptModules.json",
+  "MessageScriptLibraryPath": "EO2U\\MessageScriptLibrary.json"
+}
