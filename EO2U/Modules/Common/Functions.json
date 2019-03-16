@@ -2764,7 +2764,7 @@
       {
         "Type": "int",
         "Name": "buff_type",
-        "Description": "type of buff. 0xB = any type"
+        "Description": "type of buff. 0x1F = any type"
       }
     ]
   },
@@ -3341,7 +3341,7 @@
   {
     "Index": "0x00F6",
     "ReturnType": "bool",
-    "Name": "is_rare_breed",
+    "Name": "rare_breed",
     "Description": "checks if the character is a rare breed",
     "Parameters": [
     ]
@@ -3632,7 +3632,7 @@
   {
     "Index": "0x010E",
     "ReturnType": "bool",
-    "Name": "is_foe_on_floor",
+    "Name": "foe_on_floor",
     "Description": "[unused in EO2U] searches the current floor for param:foe_id. returns true if found",
     "Parameters": [      
       {
@@ -3644,178 +3644,283 @@
   },  
   {
     "Index": "0x010F",
-    "ReturnType": "int",
-    "Name": "F10F",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "flexible_state_checker",
+    "Description": "checks if the monster is in the state under the param:state_id value. these ids are hardcoded to correspond to certain monsters and shouldn't be modified",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "state_id",
+        "Description": "the id of the state to check"
+      }
     ]
   },
   {
     "Index": "0x0110",
     "ReturnType": "int",
-    "Name": "F110",
-    "Description": "",
+    "Name": "action_skill_with_message",
+    "Description": "use param:skill_id at param:skill_level and replace the normal skill use message with param:message_id",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill_id",
+        "Description": "skill to use"
+      },      
+      {
+        "Type": "int",
+        "Name": "skill_level",
+        "Description": "level of the skill"
+      },      
+      {
+        "Type": "int",
+        "Name": "message_id",
+        "Description": "message to play instead of normal skill use"
+      }
     ]
   },
   {
     "Index": "0x0111",
     "ReturnType": "int",
     "Name": "F111",
-    "Description": "",
+    "Description": "[unused in all games] - seems to be a near copy of 0xAD with some differences. not sure what they are",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },      
     ]
   },
   {
     "Index": "0x0112",
-    "ReturnType": "int",
-    "Name": "F112",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "in_hole",
+    "Description": "is the monster in a hole?",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0113",
-    "ReturnType": "int",
-    "Name": "F113",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "enable_out_of_turn",
+    "Description": "causes the script to be run again at end of turn",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0114",
-    "ReturnType": "int",
-    "Name": "F114",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "disable_out_of_turn_script",
+    "Description": "undoes the effect of 0x0113",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0115",
-    "ReturnType": "int",
-    "Name": "F115",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "out_of_turn_action",
+    "Description": "checks if we're on an out of turn action",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0116",
     "ReturnType": "int",
-    "Name": "F116",
-    "Description": "",
+    "Name": "get_out_of_turn_action_count",
+    "Description": "loads the number of times the out of turn script has run. never used in any EO game",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0117",
-    "ReturnType": "int",
-    "Name": "F117",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_out_of_turn_action_count",
+    "Description": "sets the amount of times the out of turn action has run to param:count. never used in any EO game",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "count",
+        "Description": "value to set the count to"
+      },  
     ]
   },
   {
     "Index": "0x0118",
-    "ReturnType": "int",
-    "Name": "F118",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "has_action_speed_modifier",
+    "Description": "does this character have a special action speed modifier? I can't find how to set it. never used in any EO game",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0119",
-    "ReturnType": "int",
-    "Name": "F119",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "action_leveled_skill_with_ready_allies",
+    "Description": "use param:skill at level param:skill_level. requires param:monster_count readied allies of type param:monster",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "skill",
+        "Description": "id of skill to use"
+      },     
+      {
+        "Type": "int",
+        "Name": "monster",
+        "Description": "ally to ready"
+      },        
+      {
+        "Type": "int",
+        "Name": "monster_count",
+        "Description": "number of monsters"
+      },        
+      {
+        "Type": "int",
+        "Name": "skill_level",
+        "Description": "level of skill to use"
+      },  
     ]
   },
   {
     "Index": "0x011A",
-    "ReturnType": "int",
-    "Name": "F11A",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "took_damage_of_element_type_last_turn",
+    "Description": "did this character take damage of element type param:type last turn?",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "type",
+        "Description": "element type. NOTE: the entire array is shifted left once as 1 is used to mean \"any damage type\""
+      }
     ]
   },
   {
     "Index": "0x011B",
-    "ReturnType": "int",
+    "ReturnType": "void",
     "Name": "F11B",
-    "Description": "",
+    "Description": "unknown. it's a targeting type used only by a yggdrasil core in 2u",
     "Parameters": [
     ]
   },
   {
     "Index": "0x011C",
-    "ReturnType": "int",
+    "ReturnType": "void",
     "Name": "F11C",
-    "Description": "",
+    "Description": "unknown. a targeting type that checks for a flag and targets that character. also stores param:value in memory on that character. never used in any EO game",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "value",
+        "Description": "value to store"
+      }
     ]
   },
   {
     "Index": "0x011D",
-    "ReturnType": "int",
-    "Name": "F11D",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "player_character_in_slot_is_alive",
+    "Description": "checks if player character in param:slot is alive. never used in any EO game",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "slot",
+        "Description": "slot to check"
+      }
     ]
   },
   {
     "Index": "0x011E",
     "ReturnType": "int",
     "Name": "F11E",
-    "Description": "",
+    "Description": "unsure. I think it's a targeting type but I'm not positive. it checks for param:slot to be alive on player team, and then maybe targets them?",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "slot",
+        "Description": "slot to check"
+      }
     ]
   },
   {
     "Index": "0x011F",
-    "ReturnType": "int",
-    "Name": "F11F",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "monster_exists_yggcell",
+    "Description": "checks if monster param:id exists. seems identical to 0xD1 with one very minor change that makes no difference",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "id",
+        "Description": "monster id"
+      }    
     ]
   },
   {
     "Index": "0x0120",
-    "ReturnType": "int",
-    "Name": "F120",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_battle_bit_flag",
+    "Description": "sets param:bit to on in a special battle state flag",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "bit",
+        "Description": "bit to set"
+      }
     ]
   },
   {
     "Index": "0x0121",
-    "ReturnType": "int",
-    "Name": "F121",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "clear_battle_bit_flag",
+    "Description": "sets param:bit to off in a special battle state flag",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "bit",
+        "Description": "bit to clear"
+      }
     ]
   },
   {
     "Index": "0x0122",
-    "ReturnType": "int",
-    "Name": "F122",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "check_battle_bit_flag",
+    "Description": "checks state of param:bit in a special battle state flag",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "bit",
+        "Description": "bit to check"
+      }
     ]
   },
   {
     "Index": "0x0123",
-    "ReturnType": "int",
-    "Name": "F123",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_max_ailment_duration",
+    "Description": "sets the maximum duration that character can have param:ailment to param:duration turns",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "ailment",
+        "Description": "ailment bit"
+      },
+      {
+        "Type": "int",
+        "Name": "duration",
+        "Description": "max duration of ailment"
+      },
     ]
   },
   {
     "Index": "0x0124",
     "ReturnType": "int",
-    "Name": "F124",
-    "Description": "",
+    "Name": "count_ally_of_type_can_act",
+    "Description": "counts the number of ally of param:monster_id. will not count allies who are incapacitated",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "monster_id",
+        "Description": "monster id to count"
+      }
     ]
   },
   {
