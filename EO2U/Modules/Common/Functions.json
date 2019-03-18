@@ -2277,7 +2277,7 @@
   {
     "Index": "0x00A3",
     "ReturnType": "void",
-    "Name": "target_lowest_TP",
+    "Name": "target_lowest_tp",
     "Description": "target the character with the least TP, respecting the target team of the skill. note: yes, this is how longicorns prioritize cover targets",
     "Parameters": [
     ]
@@ -2285,7 +2285,7 @@
   {
     "Index": "0x00A4",
     "ReturnType": "void",
-    "Name": "target_highest_TP",
+    "Name": "target_highest_tp",
     "Description": "target the character with the least TP, respecting the target team of the skill. note: yes, this is how longicorns prioritize cover targets",
     "Parameters": [
     ]
@@ -2550,7 +2550,7 @@
   {
     "Index": "0x00BD",
     "ReturnType": "void",
-    "Name": "target_lowest_tp_pct",
+    "Name": "target_highest_tp_pct",
     "Description": "probably should have been highest TP percentage",
     "Parameters": [
     ]
