@@ -1,118 +1,118 @@
 [
   {
     "Index": "0x0000",
-    "ReturnType": "int",
-    "Name": "F000",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "get_global_flag",
+    "Description": "returns whether param:flag is set",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "flag",
+        "Description": "global flag to get"
       }
     ]
   },
   {
     "Index": "0x0001",
-    "ReturnType": "int",
+    "ReturnType": "void",
     "Name": "set_global_flag",
-    "Description": "set a global flag with index param to 1",
+    "Description": "sets param:flag to true",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "index",
-        "Description": "flag index"
+        "Name": "flag",
+        "Description": "global flag to set"
       }
     ]
   },
   {
     "Index": "0x0002",
-    "ReturnType": "int",
-    "Name": "F002",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "clear_global_flag",
+    "Description": "sets param:flag to false",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "flag",
+        "Description": "global flag to clear"
       }
     ]
   },
   {
     "Index": "0x0003",
-    "ReturnType": "int",
-    "Name": "F003",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "display_message",
+    "Description": "display message with id param:id",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "message id to display"
       }
     ]
   },
   {
     "Index": "0x0004",
-    "ReturnType": "int",
-    "Name": "F004",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "prompt_yes_no",
+    "Description": "display message with id param:id and prompts yes or no response, then returns with response",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "message id to display"
       }
     ]
   },
   {
     "Index": "0x0005",
     "ReturnType": "int",
-    "Name": "F005",
-    "Description": "",
+    "Name": "prompt_three_choices",
+    "Description": "display message with id param:id and prompts three choices, then returns with response",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "message id to display"
       }
     ]
   },
   {
     "Index": "0x0006",
     "ReturnType": "int",
-    "Name": "F006",
-    "Description": "",
+    "Name": "prompt_four_choices",
+    "Description": "display message with id param:id and prompts three choices, then returns with response",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "message id to display"
       }
     ]
   },
   {
     "Index": "0x0007",
-    "ReturnType": "int",
-    "Name": "F007",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "fade_out",
+    "Description": "fade screen to param:colour",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "colour",
+        "Description": "colour to fade to. 0 = black, 1 = white"
       }
     ]
   },
   {
     "Index": "0x0008",
-    "ReturnType": "int",
-    "Name": "F008",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "fade_in",
+    "Description": "fade screen in. not sure how the param:colour relates. needs fade_out to be called first",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "colour",
+        "Description": "colour for fade. 0 = black, 1 = white"
       }
     ]
   },
@@ -120,38 +120,56 @@
     "Index": "0x0009",
     "ReturnType": "int",
     "Name": "F009",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
         "Name": "param1",
         "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x000A",
+    "ReturnType": "int",
+    "Name": "rand_range_rng2",
+    "Description": "rolls a number between param:min and param:max. uses rng2",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "min",
+        "Description": "minimum value"
+      },
+      {
+        "Type": "int",
+        "Name": "max",
+        "Description": "maximum value"
       }
     ]
   },
   {
     "Index": "0x000B",
     "ReturnType": "int",
-    "Name": "F00B",
-    "Description": "",
+    "Name": "rand_rng2",
+    "Description": "rolls a number between 0 and param:x. uses rng2",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "rng bound"
       }
     ]
   },
   {
     "Index": "0x000C",
-    "ReturnType": "int",
-    "Name": "F00C",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "wait",
+    "Description": "wait param:frames frames",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "frames",
+        "Description": "frames to wait"
       }
     ]
   },
@@ -159,7 +177,7 @@
     "Index": "0x000D",
     "ReturnType": "int",
     "Name": "F00D",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -172,7 +190,7 @@
     "Index": "0x000E",
     "ReturnType": "int",
     "Name": "F00E",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -185,7 +203,7 @@
     "Index": "0x000F",
     "ReturnType": "int",
     "Name": "F00F",
-    "Description": "",
+    "Description": "it square roots a number. not sure how else it works",
     "Parameters": [
       {
         "Type": "int",
@@ -198,7 +216,7 @@
     "Index": "0x0010",
     "ReturnType": "int",
     "Name": "F010",
-    "Description": "",
+    "Description": "dunno. is it even used?",
     "Parameters": [
       {
         "Type": "int",
@@ -222,55 +240,55 @@
   },
   {
     "Index": "0x0012",
-    "ReturnType": "int",
-    "Name": "F012",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_message_party_member",
+    "Description": "sets some message param:slot to param:member\'s name",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "string slot"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "member",
+        "Description": "party member name"
       }
     ]
   },
   {
     "Index": "0x0013",
     "ReturnType": "int",
-    "Name": "F013",
-    "Description": "",
+    "Name": "get_party_member",
+    "Description": "gets a party member based on param:arg. param:ailment will disqualify party members if they have it",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "arg",
+        "Description": "0 = first, 1 = last, anything else = random"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "ailment",
+        "Description": "cannot get this party member if it has this ailment"
       }
     ]
   },
   {
     "Index": "0x0014",
-    "ReturnType": "int",
-    "Name": "F014",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "play_music",
+    "Description": "plays param:song_id and fades the previous song out by param:fade_frames. not sure what param:param3 is",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "song_id",
+        "Description": "song to play"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "fade_frames",
+        "Description": "how many frames to fade the previous song"
       },
       {
         "Type": "int",
@@ -281,30 +299,30 @@
   },
   {
     "Index": "0x0015",
-    "ReturnType": "int",
-    "Name": "F015",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "stop_music",
+    "Description": "stops current music with param:frames of fadeout",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "frames",
+        "Description": "fadeout frames"
       }
     ]
   },
   {
     "Index": "0x0016",
     "ReturnType": "int",
-    "Name": "F016",
-    "Description": "",
+    "Name": "get_music",
+    "Description": "gets currently playing music id",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0017",
     "ReturnType": "int",
-    "Name": "F017",
-    "Description": "",
+    "Name": "time_of_day_2",
+    "Description": "identical to 0x89",
     "Parameters": [
     ]
   },
@@ -312,7 +330,7 @@
     "Index": "0x0018",
     "ReturnType": "int",
     "Name": "F018",
-    "Description": "",
+    "Description": "dunno. haven't checked it yet",
     "Parameters": [
       {
         "Type": "int",
@@ -1798,6 +1816,37 @@
         "Description": ""
       }
     ]
+  }, 
+  {
+    "Index": "0x007E",
+    "ReturnType": "int",
+    "Name": "F07E",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
+    ]
+  }, 
+  {
+    "Index": "0x007F",
+    "ReturnType": "int",
+    "Name": "F07F",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
   },
   {
     "Index": "0x0080",
@@ -2615,8 +2664,8 @@
   {
     "Index": "0x00C2",
     "ReturnType": "bool",
-    "Name": "ally_party_size_lower_than_x",
-    "Description": "checks if there are fewer party members than param:party_size on the team",
+    "Name": "ally_party_size_lower_than_or_equal_to_x",
+    "Description": "checks if friendly party size is equal to or lower than param:party_size",
     "Parameters": [
       {
         "Type": "int",
@@ -2628,8 +2677,8 @@
   {
     "Index": "0x00C3",
     "ReturnType": "bool",
-    "Name": "enemy_party_size_lower_than_x",
-    "Description": "checks if there are fewer party members than param:party_size on the enemy team",
+    "Name": "enemy_party_size_lower_than_or_equal_to_x",
+    "Description": "checks if enemy party size is equal to or lower than param:party_size",
     "Parameters": [
       {
         "Type": "int",
@@ -2759,7 +2808,7 @@
       {
         "Type": "int",
         "Name": "buff_or_debuff",
-        "Description": "is it a buff or a debuff?"
+        "Description": "is it a buff or a debuff? 0 is buff, 1 is debuff"
       },
       {
         "Type": "int",
@@ -2782,7 +2831,7 @@
       {
         "Type": "int",
         "Name": "buff_type",
-        "Description": "type of buff. 0xB = any type"
+        "Description": "type of buff. 0x1F = any type"
       }
     ]
   },
@@ -2800,7 +2849,7 @@
       {
         "Type": "int",
         "Name": "buff_type",
-        "Description": "type of buff. 0xB = any type"
+        "Description": "type of buff. 0x1F = any type"
       }
     ]
   },
@@ -2818,7 +2867,7 @@
       {
         "Type": "int",
         "Name": "buff_type",
-        "Description": "type of buff. 0xB = any type"
+        "Description": "type of buff. 0x1F = any type"
       }
     ]
   },
@@ -2895,36 +2944,36 @@
   {
     "Index": "0x00D6",
     "ReturnType": "bool",
-    "Name": "narmer_can_dive",
-    "Description": "check if narmer can dive. params should always be 0,2",
+    "Name": "get_stored_state_flag",
+    "Description": "gets a stored state on the character",
     "Parameters": [
       {
         "Type": "int",
         "Name": "offset",
-        "Description": "narmer dive offset"
+        "Description": "state offset in memory"
       },
       {
         "Type": "int",
         "Name": "flag",
-        "Description": "narmer dive bitflag"
+        "Description": "state bitflag"
       }
     ]
   },
   {
     "Index": "0x00D7",
     "ReturnType": "void",
-    "Name": "allow_narmer_to_dive",
-    "Description": "clears the state that prevents narmer from diving. params should always be 0,2",
+    "Name": "clear_stored_state_flag",
+    "Description": "clears a stored state on the character",
     "Parameters": [
       {
         "Type": "int",
         "Name": "offset",
-        "Description": "narmer dive offset"
+        "Description": "state offset in memory"
       },
       {
         "Type": "int",
         "Name": "flag",
-        "Description": "narmer dive bitflag"
+        "Description": "state bitflag"
       }
     ]
   },
@@ -4270,8 +4319,8 @@
   {
     "Index": "0x0150",
     "ReturnType": "int",
-    "Name": "F150",
-    "Description": "",
+    "Name": "do_nothing_150",
+    "Description": "does nothing. I believe this was used in EO3 but it's edited out in EO2U",
     "Parameters": [
       {
         "Type": "int",
@@ -4293,8 +4342,8 @@
   {
     "Index": "0x0151",
     "ReturnType": "int",
-    "Name": "F151",
-    "Description": "",
+    "Name": "do_nothing_151",
+    "Description": "see 0x150",
     "Parameters": [
       {
         "Type": "int",
@@ -4311,8 +4360,8 @@
   {
     "Index": "0x0152",
     "ReturnType": "int",
-    "Name": "F152",
-    "Description": "",
+    "Name": "do_nothing_152",
+    "Description": "see 0x150",
     "Parameters": [
       {
         "Type": "int",
@@ -4330,7 +4379,7 @@
     "Index": "0x0153",
     "ReturnType": "int",
     "Name": "F153",
-    "Description": "",
+    "Description": "don't know. grep utility is messing up finding these",
     "Parameters": [
     ]
   },
