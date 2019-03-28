@@ -176,26 +176,26 @@
   {
     "Index": "0x000D",
     "ReturnType": "int",
-    "Name": "F00D",
-    "Description": "dunno",
+    "Name": "button_pressed",
+    "Description": "is param:button pressed?",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "button",
+        "Description": "button to check"
       }
     ]
   },
   {
     "Index": "0x000E",
     "ReturnType": "int",
-    "Name": "F00E",
-    "Description": "dunno",
+    "Name": "button_pressed_raw",
+    "Description": "is param:button pressed? check for raw input",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "button",
+        "Description": "button to check"
       }
     ]
   },
@@ -229,7 +229,7 @@
     "Index": "0x0011",
     "ReturnType": "int",
     "Name": "F011",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -341,9 +341,9 @@
   },
   {
     "Index": "0x0019",
-    "ReturnType": "int",
+    "ReturnType": "void",
     "Name": "F019",
-    "Description": "",
+    "Description": "hard to check because I've cleared a lot of the events it's in. I believe it counts the number of people who have the passed ailment and save the value for later",
     "Parameters": [
       {
         "Type": "int",
@@ -355,34 +355,34 @@
   {
     "Index": "0x001A",
     "ReturnType": "int",
-    "Name": "F01A",
-    "Description": "",
+    "Name": "restore_hp",
+    "Description": "restores hp param:amount to all allies",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "amount",
+        "Description": "how much to restore"
       }
     ]
   },
   {
     "Index": "0x001B",
-    "ReturnType": "int",
-    "Name": "F01B",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "restore_tp",
+    "Description": "restores tp param:amount to all allies",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "amount",
+        "Description": "how much to restore"
       }
     ]
   },
   {
     "Index": "0x001C",
-    "ReturnType": "int",
-    "Name": "F01C",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "restore_hp_and_tp",
+    "Description": "needs to be double checked",
     "Parameters": [
     ]
   },
@@ -390,7 +390,7 @@
     "Index": "0x001D",
     "ReturnType": "int",
     "Name": "F01D",
-    "Description": "",
+    "Description": "I believe it displays the xth message in a thing with a fade in period of y? need to check",
     "Parameters": [
       {
         "Type": "int",
@@ -407,83 +407,83 @@
   {
     "Index": "0x001E",
     "ReturnType": "int",
-    "Name": "F01E",
-    "Description": "",
+    "Name": "party_size",
+    "Description": "returns number of characters in party",
     "Parameters": [
     ]
   },
   {
     "Index": "0x001F",
     "ReturnType": "int",
-    "Name": "F01F",
-    "Description": "",
+    "Name": "party_member_dead_or_petrified",
+    "Description": "checks if param:member is has param:ailment",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "member",
+        "Description": "party member"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "ailment",
+        "Description": "1 = dead, 2 = either. doesn't seem to be one for just petrified"
       }
     ]
   },
   {
     "Index": "0x0020",
     "ReturnType": "int",
-    "Name": "F020",
-    "Description": "",
+    "Name": "character_level",
+    "Description": "gets level of character in param:slot",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "character to get level of"
       }
     ]
   },
   {
     "Index": "0x0021",
     "ReturnType": "int",
-    "Name": "F021",
-    "Description": "",
+    "Name": "character_class",
+    "Description": "gets class of character in param:slot",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "character to get class of"
       }
     ]
   },
   {
     "Index": "0x0022",
     "ReturnType": "int",
-    "Name": "F022",
-    "Description": "",
+    "Name": "character_subclass",
+    "Description": "gets subclass of character in param:slot. returns -1 in EO2U",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "character to get subclass of"
       }
     ]
   },
   {
     "Index": "0x0023",
     "ReturnType": "int",
-    "Name": "F023",
-    "Description": "",
+    "Name": "character_stat",
+    "Description": "gets param:stat of character in param:slot",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "character to get stat of"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "stat",
+        "Description": "stat to get. in order: HP, TP, STR, VIT, AGI, LUC, TEC"
       }
     ]
   },
@@ -491,7 +491,7 @@
     "Index": "0x0024",
     "ReturnType": "int",
     "Name": "F024",
-    "Description": "",
+    "Description": "can't check for this one. it has to do with items and equipment.",
     "Parameters": [
       {
         "Type": "int",
@@ -503,24 +503,24 @@
   {
     "Index": "0x0025",
     "ReturnType": "int",
-    "Name": "F025",
-    "Description": "",
+    "Name": "day",
+    "Description": "returns current day",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0026",
     "ReturnType": "int",
-    "Name": "F026",
-    "Description": "",
+    "Name": "hour_of_day",
+    "Description": "returns current hour",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0027",
     "ReturnType": "int",
-    "Name": "F027",
-    "Description": "",
+    "Name": "minute_of_hour",
+    "Description": "returns current minute",
     "Parameters": [
     ]
   },
@@ -528,12 +528,12 @@
     "Index": "0x0028",
     "ReturnType": "int",
     "Name": "F028",
-    "Description": "",
+    "Description": "I thiiiiink it watches for when you clear a message to link to another message. I don't know. calls 0x1D",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id_of_script_message",
+        "Description": "this is kind of a guess"
       }
     ]
   },
@@ -541,7 +541,7 @@
     "Index": "0x0029",
     "ReturnType": "int",
     "Name": "F029",
-    "Description": "",
+    "Description": "don't know. it's basically unused. it's only in a debug room in EO3",
     "Parameters": [
       {
         "Type": "int",
@@ -554,7 +554,7 @@
     "Index": "0x002A",
     "ReturnType": "int",
     "Name": "F02A",
-    "Description": "",
+    "Description": "allegedly plays sounds",
     "Parameters": [
       {
         "Type": "int",
@@ -567,7 +567,7 @@
     "Index": "0x002B",
     "ReturnType": "int",
     "Name": "F02B",
-    "Description": "",
+    "Description": "not sure",
     "Parameters": [
       {
         "Type": "int",
@@ -578,45 +578,35 @@
   },
   {
     "Index": "0x002C",
-    "ReturnType": "int",
-    "Name": "F02C",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "null_F02C",
+    "Description": "nulled script. I believe it had to do with the sea quest in EO3",
     "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      }
     ]
   },
   {
     "Index": "0x002D",
-    "ReturnType": "int",
-    "Name": "F02D",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "null_F02D",
+    "Description": "nulled script. apparently it played sound effects in EO3/EO4",
     "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      }
     ]
   },
   {
     "Index": "0x002E",
     "ReturnType": "int",
-    "Name": "F02E",
-    "Description": "",
+    "Name": "divide_int",
+    "Description": "divides param:int1 by param:int2",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "int1",
+        "Description": "first int to divide"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "int2",
+        "Description": "second int to divide"
       }
     ]
   },
@@ -624,7 +614,7 @@
     "Index": "0x002F",
     "ReturnType": "int",
     "Name": "F02F",
-    "Description": "",
+    "Description": "this is literally never called in any EO game from EO3 to EON so. has to do with movement or something",
     "Parameters": [
       {
         "Type": "int",
@@ -660,114 +650,114 @@
   },
   {
     "Index": "0x0030",
-    "ReturnType": "int",
-    "Name": "F030",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "take_step",
+    "Description": "take a step in param:direction",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "direction",
+        "Description": "0 = forward, 1 = backward, 2 = strafe left, 3 = strafe right"
       }
     ]
   },
   {
     "Index": "0x0031",
-    "ReturnType": "int",
-    "Name": "F031",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "turn",
+    "Description": "makes you turn toward param:direction",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "direction",
+        "Description": "0 = north, 1 = south, 2 = east, 3 = west"
       }
     ]
   },
   {
     "Index": "0x0032",
-    "ReturnType": "int",
+    "ReturnType": "void",
     "Name": "F032",
-    "Description": "",
+    "Description": "apparently this makes places you at coordinates param:x, param:y facing param:direction",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x coordinate to place at"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y coordinate to place at"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "direction",
+        "Description": "0 = north, 1 = south, 2 = east, 3 = west"
       }
     ]
   },
   {
     "Index": "0x0033",
-    "ReturnType": "int",
-    "Name": "F033",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "show_character",
+    "Description": "display character param:id in param:slot with param:effect",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "slot to put character"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "id",
+        "Description": "character id"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "effect",
+        "Description": "0 = fade in, 1 = from right, 2 = from left"
       }
     ]
   },
   {
     "Index": "0x0034",
-    "ReturnType": "int",
-    "Name": "F034",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "hide_character",
+    "Description": "hides character in param:slot with param:effect",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "slot to hide"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "effect",
+        "Description": "0 = fade in, 1 = to right, 2 = to left"
       }
     ]
   },
   {
     "Index": "0x0035",
-    "ReturnType": "int",
-    "Name": "F035",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "show_character_2",
+    "Description": "display character param:id in param:slot with param:effect. how does this differ from 0x33? can't quite tell. this is used for fade-ins when you enter facilities",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "slot to put character"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "id",
+        "Description": "character id"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "effect",
+        "Description": "0 = fade in, 1 = from right, 2 = from left"
       }
     ]
   },
@@ -775,87 +765,87 @@
     "Index": "0x0036",
     "ReturnType": "int",
     "Name": "F036",
-    "Description": "",
+    "Description": "unknown. used only in EO3 and EO4. it gets some value and returns it",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0037",
-    "ReturnType": "int",
-    "Name": "F037",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "start_battle",
+    "Description": "starts a battle against param:encount_group with param:background and param:music. can also specify param:advantage",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "encount_group",
+        "Description": "encount group to fight"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "advantage",
+        "Description": "these are flags. not sure what they mean. apparently 9 will blindside you and 10 will be preemptive. not sure what the combo is"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "background",
+        "Description": "battle background to use"
       },
       {
         "Type": "int",
-        "Name": "param4",
-        "Description": ""
+        "Name": "music",
+        "Description": "bgm to play"
       }
     ]
   },
   {
     "Index": "0x0038",
     "ReturnType": "int",
-    "Name": "F038",
-    "Description": "",
+    "Name": "free_item_slots",
+    "Description": "returns the number of item slots open in inventory",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0039",
-    "ReturnType": "int",
+    "ReturnType": "void",
     "Name": "F039",
-    "Description": "",
+    "Description": "apparently gives one param:item",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "item",
+        "Description": "item to give"
       }
     ]
   },
   {
     "Index": "0x003A",
-    "ReturnType": "int",
+    "ReturnType": "void",
     "Name": "F03A",
-    "Description": "",
+    "Description": "apparently gives param:count param:item",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "item",
+        "Description": "id of item to give"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "count",
+        "Description": "amount"
       }
     ]
   },
   {
     "Index": "0x003B",
-    "ReturnType": "int",
-    "Name": "F03B",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "give_money",
+    "Description": "gives param:amount ental",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "amount",
+        "Description": "money to give"
       }
     ]
   },
@@ -863,43 +853,43 @@
     "Index": "0x003C",
     "ReturnType": "int",
     "Name": "F03C",
-    "Description": "",
+    "Description": "apparently counts items of param:type",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "type",
+        "Description": "type of item to count"
       }
     ]
   },
   {
     "Index": "0x003D",
     "ReturnType": "int",
-    "Name": "F03D",
-    "Description": "",
+    "Name": "remove_one_item",
+    "Description": "removes one param:item",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "item",
+        "Description": "item to remove"
       }
     ]
   },
   {
     "Index": "0x003E",
     "ReturnType": "int",
-    "Name": "F03E",
-    "Description": "",
+    "Name": "remove_items",
+    "Description": "removes param:count param:item(s) from inventory",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "item",
+        "Description": "item to remove"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "count",
+        "Description": "number to remove"
       }
     ]
   },
@@ -907,7 +897,64 @@
     "Index": "0x003F",
     "ReturnType": "int",
     "Name": "F03F",
-    "Description": "",
+    "Description": "apparently gets the percentage of the map which is correctly mapped within a rectangle of param:x1, param:y1, param:x2, param:y2",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "x1",
+        "Description": "coord 1"
+      },
+      {
+        "Type": "int",
+        "Name": "y1",
+        "Description": "coord 2"
+      },
+      {
+        "Type": "int",
+        "Name": "x2",
+        "Description": "coord 3"
+      },
+      {
+        "Type": "int",
+        "Name": "y2",
+        "Description": "coord 4"
+      }
+    ]
+  },
+  {
+    "Index": "0x0040",
+    "ReturnType": "int",
+    "Name": "F040",
+    "Description": "apparently gets the percentage of the floor that has been explored",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0041",
+    "ReturnType": "int",
+    "Name": "current_money",
+    "Description": "returns current money",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0042",
+    "ReturnType": "void",
+    "Name": "give_money_silent",
+    "Description": "gives param:amount money but does not create a text box or play a UI sound",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "amount",
+        "Description": "amount of money to give"
+      }
+    ]
+  },
+  {
+    "Index": "0x0043",
+    "ReturnType": "int",
+    "Name": "F043",
+    "Description": "dunno - something to do with items and strings",
     "Parameters": [
       {
         "Type": "int",
@@ -918,82 +965,50 @@
         "Type": "int",
         "Name": "param2",
         "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param3",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param4",
-        "Description": ""
       }
-    ]
-  },
-  {
-    "Index": "0x0040",
-    "ReturnType": "int",
-    "Name": "F040",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x0041",
-    "ReturnType": "int",
-    "Name": "F041",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x0042",
-    "ReturnType": "int",
-    "Name": "F042",
-    "Description": "",
-    "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      }
-    ]
-  },
-  {
-    "Index": "0x0043",
-    "ReturnType": "int",
-    "Name": "F043",
-    "Description": "",
-    "Parameters": [
     ]
   },
   {
     "Index": "0x0044",
     "ReturnType": "int",
-    "Name": "F044",
-    "Description": "",
+    "Name": "set_multiple_flags",
+    "Description": "set all flags between param:min and param:max",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "min",
+        "Description": "earliest flag to set"
+      },    
+      {
+        "Type": "int",
+        "Name": "max",
+        "Description": "latest flag to set"
       }
     ]
   },
   {
     "Index": "0x0045",
     "ReturnType": "int",
-    "Name": "F045",
-    "Description": "",
+    "Name": "clear_multiple_flags",
+    "Description": "clear all flags between param:min and param:max",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "min",
+        "Description": "earliest flag to clear"
+      },    
+      {
+        "Type": "int",
+        "Name": "max",
+        "Description": "latest flag to clear"
+      }
     ]
   },
   {
     "Index": "0x0046",
     "ReturnType": "int",
     "Name": "F046",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1011,7 +1026,7 @@
     "Index": "0x0047",
     "ReturnType": "int",
     "Name": "F047",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1024,7 +1039,7 @@
     "Index": "0x0048",
     "ReturnType": "int",
     "Name": "F048",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1037,7 +1052,7 @@
     "Index": "0x0049",
     "ReturnType": "int",
     "Name": "F049",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1050,7 +1065,7 @@
     "Index": "0x004A",
     "ReturnType": "int",
     "Name": "F04A",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1063,7 +1078,7 @@
     "Index": "0x004B",
     "ReturnType": "int",
     "Name": "F04B",
-    "Description": "",
+    "Description": "dunno. used only in EO4",
     "Parameters": [
       {
         "Type": "int",
@@ -1074,9 +1089,9 @@
   },
   {
     "Index": "0x004C",
-    "ReturnType": "int",
-    "Name": "F04C",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "null_F04C",
+    "Description": "unused",
     "Parameters": [
     ]
   },
@@ -1084,7 +1099,7 @@
     "Index": "0x004D",
     "ReturnType": "int",
     "Name": "F04D",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1097,7 +1112,7 @@
     "Index": "0x004E",
     "ReturnType": "int",
     "Name": "F04E",
-    "Description": "",
+    "Description": "dunno. used only in EO3's test dungeon",
     "Parameters": [
       {
         "Type": "int",
@@ -1130,7 +1145,7 @@
     "Index": "0x004F",
     "ReturnType": "int",
     "Name": "F04F",
-    "Description": "",
+    "Description": "dunno. it has to do with FOEs",
     "Parameters": [
       {
         "Type": "int",
@@ -1143,7 +1158,7 @@
     "Index": "0x0050",
     "ReturnType": "int",
     "Name": "F050",
-    "Description": "",
+    "Description": "dunno. has something to do with FOE lifespan?",
     "Parameters": [
       {
         "Type": "int",
@@ -1156,7 +1171,7 @@
     "Index": "0x0051",
     "ReturnType": "int",
     "Name": "F051",
-    "Description": "",
+    "Description": "dunno. used in EO3 only",
     "Parameters": [
     ]
   },
@@ -1164,7 +1179,7 @@
     "Index": "0x0052",
     "ReturnType": "int",
     "Name": "F052",
-    "Description": "",
+    "Description": "dunno. something with FOE movement. calls 0x53",
     "Parameters": [
       {
         "Type": "int",
@@ -1187,7 +1202,7 @@
     "Index": "0x0053",
     "ReturnType": "int",
     "Name": "F053",
-    "Description": "",
+    "Description": "dunno. something with FOE movement.",
     "Parameters": [
       {
         "Type": "int",
@@ -1205,7 +1220,7 @@
     "Index": "0x0054",
     "ReturnType": "int",
     "Name": "F054",
-    "Description": "",
+    "Description": "dunno.",
     "Parameters": [
     ]
   },
@@ -1213,7 +1228,7 @@
     "Index": "0x0055",
     "ReturnType": "int",
     "Name": "F055",
-    "Description": "",
+    "Description": "dunno. used only in EO3 guild",
     "Parameters": [
     ]
   },
@@ -1221,7 +1236,7 @@
     "Index": "0x0056",
     "ReturnType": "int",
     "Name": "F056",
-    "Description": "",
+    "Description": "dunno. something with FOEs. not used in EO2U",
     "Parameters": [
     ]
   },
@@ -1229,49 +1244,49 @@
     "Index": "0x0057",
     "ReturnType": "int",
     "Name": "F057",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0058",
     "ReturnType": "int",
-    "Name": "F058",
-    "Description": "",
+    "Name": "full_item_slots",
+    "Description": "returns item slots which are full. used only in EO3 test dungeon?",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0059",
     "ReturnType": "int",
-    "Name": "F059",
-    "Description": "",
+    "Name": "get_item_in_slot",
+    "Description": "returns the item in param:slot",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "slot to return"
       }
     ]
   },
   {
     "Index": "0x005A",
     "ReturnType": "int",
-    "Name": "F05A",
-    "Description": "",
+    "Name": "remove_item_from_slot",
+    "Description": "removes item from param:slot. this always returns 1 unless you pass a value out of range. used only in EO3 test dungeon",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "slot",
+        "Description": "slot to remove from"
       }
     ]
   },
   {
     "Index": "0x005B",
     "ReturnType": "int",
-    "Name": "F05B",
-    "Description": "",
+    "Name": "null_F05B",
+    "Description": "unused. returns 0",
     "Parameters": [
       {
         "Type": "int",
@@ -1288,8 +1303,8 @@
   {
     "Index": "0x005C",
     "ReturnType": "int",
-    "Name": "F05C",
-    "Description": "",
+    "Name": "null_F05C",
+    "Description": "unused. returns 0",
     "Parameters": [
       {
         "Type": "int",
@@ -1306,24 +1321,24 @@
   {
     "Index": "0x005D",
     "ReturnType": "int",
-    "Name": "F05D",
-    "Description": "",
+    "Name": "current_floor",
+    "Description": "returns the current floor",
     "Parameters": [
     ]
   },
   {
     "Index": "0x005E",
     "ReturnType": "int",
-    "Name": "F05E",
-    "Description": "",
+    "Name": "current_x_coordinate",
+    "Description": "returns current x",
     "Parameters": [
     ]
   },
   {
     "Index": "0x005F",
     "ReturnType": "int",
-    "Name": "F05F",
-    "Description": "",
+    "Name": "current_y_coordinate",
+    "Description": "returns current y",
     "Parameters": [
     ]
   },
@@ -1331,12 +1346,12 @@
     "Index": "0x0060",
     "ReturnType": "int",
     "Name": "F060",
-    "Description": "",
+    "Description": "unsure. has to do with FOE I think?",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of FOE"
       }
     ]
   },
@@ -1344,12 +1359,12 @@
     "Index": "0x0061",
     "ReturnType": "int",
     "Name": "F061",
-    "Description": "",
+    "Description": "returns some FOE value on FOE param:id",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of FOE"
       }
     ]
   },
@@ -1357,12 +1372,12 @@
     "Index": "0x0062",
     "ReturnType": "int",
     "Name": "F062",
-    "Description": "",
+    "Description": "returns some FOE value on FOE param:id",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of FOE"
       }
     ]
   },
@@ -1370,12 +1385,12 @@
     "Index": "0x0063",
     "ReturnType": "int",
     "Name": "F063",
-    "Description": "",
+    "Description": "returns some FOE value on FOE param:id",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of FOE"
       }
     ]
   },
@@ -1383,7 +1398,7 @@
     "Index": "0x0064",
     "ReturnType": "int",
     "Name": "F064",
-    "Description": "",
+    "Description": "dunno. used only in EO3's debug room",
     "Parameters": [
       {
         "Type": "int",
@@ -1400,8 +1415,200 @@
   {
     "Index": "0x0065",
     "ReturnType": "int",
-    "Name": "F065",
-    "Description": "",
+    "Name": "result_screen",
+    "Description": "brings up the result screen. param:exp is how much exp, and all other params are item ids to be received.",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "exp",
+        "Description": "exp to give"
+      },
+      {
+        "Type": "int",
+        "Name": "item_1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "item_2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "item_3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "item_4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "item_5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "item_6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "item_7",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0066",
+    "ReturnType": "int",
+    "Name": "F066",
+    "Description": "dunno what it does. used in only eo3 test room",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x0067",
+    "ReturnType": "int",
+    "Name": "F067",
+    "Description": "dunno",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0068",
+    "ReturnType": "int",
+    "Name": "F068",
+    "Description": "dunno. unused in EO2U and very rarely used outside",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x0069",
+    "ReturnType": "int",
+    "Name": "F069",
+    "Description": "unsure",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x006A",
+    "ReturnType": "int",
+    "Name": "F06A",
+    "Description": "returns some FOE value on FOE param:id",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "id",
+        "Description": "id of FOE"
+      }
+    ]
+  },
+  {
+    "Index": "0x006B",
+    "ReturnType": "int",
+    "Name": "F06B",
+    "Description": "dunno. something with FOEs",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x006C",
+    "ReturnType": "int",
+    "Name": "F06C",
+    "Description": "dunno",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Index": "0x006D",
+    "ReturnType": "int",
+    "Name": "F06D",
+    "Description": "unknown and unused in EO2U. only used in EO4, EOU, and EO3",
+    "Parameters": [
+    ]
+  },
+  {
+    "Index": "0x006E",
+    "ReturnType": "int",
+    "Name": "F06E",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1433,190 +1640,28 @@
         "Name": "param6",
         "Description": ""
       },
-      {
-        "Type": "int",
-        "Name": "param7",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param8",
-        "Description": ""
-      }
-    ]
-  },
-  {
-    "Index": "0x0066",
-    "ReturnType": "int",
-    "Name": "F066",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x0067",
-    "ReturnType": "int",
-    "Name": "F067",
-    "Description": "",
-    "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param2",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param3",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param4",
-        "Description": ""
-      }
-    ]
-  },
-  {
-    "Index": "0x0068",
-    "ReturnType": "int",
-    "Name": "F068",
-    "Description": "",
-    "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param2",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param3",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param4",
-        "Description": ""
-      }
-    ]
-  },
-  {
-    "Index": "0x0069",
-    "ReturnType": "int",
-    "Name": "F069",
-    "Description": "",
-    "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param2",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param3",
-        "Description": ""
-      }
-    ]
-  },
-  {
-    "Index": "0x006A",
-    "ReturnType": "int",
-    "Name": "F06A",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x006B",
-    "ReturnType": "int",
-    "Name": "F06B",
-    "Description": "",
-    "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param2",
-        "Description": ""
-      }
-    ]
-  },
-  {
-    "Index": "0x006C",
-    "ReturnType": "int",
-    "Name": "F06C",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x006D",
-    "ReturnType": "int",
-    "Name": "F06D",
-    "Description": "",
-    "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      }
-    ]
-  },
-  {
-    "Index": "0x006E",
-    "ReturnType": "int",
-    "Name": "F06E",
-    "Description": "",
-    "Parameters": [
-      {
-        "Type": "int",
-        "Name": "param1",
-        "Description": ""
-      },
-      {
-        "Type": "int",
-        "Name": "param2",
-        "Description": ""
-      }
     ]
   },
   {
     "Index": "0x006F",
     "ReturnType": "int",
-    "Name": "F06F",
-    "Description": "",
+    "Name": "at_x_y_and_facing",
+    "Description": "is player at the x, y position and facing the specified direction? -1 can be passed to any argument for it to be ignored.",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x to be at"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y to be at"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "facing",
+        "Description": "0 = north, 1 = south, 2 = east, 3 = west, "
       }
     ]
   },
@@ -1624,7 +1669,7 @@
     "Index": "0x0070",
     "ReturnType": "int",
     "Name": "F070",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1652,7 +1697,7 @@
     "Index": "0x0071",
     "ReturnType": "int",
     "Name": "F071",
-    "Description": "",
+    "Description": "unknown. unused outside of EO3 and EO4. apparently it forces the party to turn?",
     "Parameters": [
       {
         "Type": "int",
@@ -1665,7 +1710,7 @@
     "Index": "0x0072",
     "ReturnType": "int",
     "Name": "F072",
-    "Description": "",
+    "Description": "unknown. it's a variant on 0x4D",
     "Parameters": [
     ]
   },
@@ -1673,20 +1718,50 @@
     "Index": "0x0073",
     "ReturnType": "int",
     "Name": "F073",
-    "Description": "",
+    "Description": "unknown. displays messages sometimes",
     "Parameters": [
       {
         "Type": "int",
         "Name": "param1",
         "Description": ""
-      }
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }, 
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      }, 
     ]
   },
   {
     "Index": "0x0074",
     "ReturnType": "int",
     "Name": "F074",
-    "Description": "",
+    "Description": "unsure. has to do with foe stuff",
     "Parameters": [
       {
         "Type": "int",
@@ -1704,7 +1779,7 @@
     "Index": "0x0075",
     "ReturnType": "int",
     "Name": "F075",
-    "Description": "",
+    "Description": "dunno. seems to be similar to 0x7B",
     "Parameters": [
     ]
   },
@@ -1712,7 +1787,7 @@
     "Index": "0x0076",
     "ReturnType": "int",
     "Name": "F076",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
     ]
   },
@@ -1720,7 +1795,7 @@
     "Index": "0x0077",
     "ReturnType": "int",
     "Name": "F077",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
     ]
   },
@@ -1728,7 +1803,7 @@
     "Index": "0x0078",
     "ReturnType": "int",
     "Name": "F078",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1741,7 +1816,7 @@
     "Index": "0x0079",
     "ReturnType": "int",
     "Name": "F079",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
       {
         "Type": "int",
@@ -1753,8 +1828,8 @@
   {
     "Index": "0x007A",
     "ReturnType": "int",
-    "Name": "F07A",
-    "Description": "",
+    "Name": "null_F07A",
+    "Description": "unused. don't call. it won't work",
     "Parameters": [
       {
         "Type": "int",
@@ -1782,7 +1857,7 @@
     "Index": "0x007B",
     "ReturnType": "int",
     "Name": "F07B",
-    "Description": "",
+    "Description": "dunno. ",
     "Parameters": [
       {
         "Type": "int",
@@ -1795,38 +1870,38 @@
     "Index": "0x007C",
     "ReturnType": "int",
     "Name": "F07C",
-    "Description": "",
+    "Description": "dunno. it's something that happens in the inn",
     "Parameters": [
     ]
   },
   {
     "Index": "0x007D",
     "ReturnType": "int",
-    "Name": "F07D",
-    "Description": "",
+    "Name": "set_time_until_foe_respawns",
+    "Description": "set param:days until FOE with param:id respawns",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "foe ID"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "days",
+        "Description": "time"
       }
     ]
   }, 
   {
     "Index": "0x007E",
     "ReturnType": "int",
-    "Name": "F07E",
-    "Description": "",
+    "Name": "time_until_foe_respawns",
+    "Description": "get time until FOE param:id respawns",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "foe ID"
       }
     ]
   }, 
@@ -1834,7 +1909,7 @@
     "Index": "0x007F",
     "ReturnType": "int",
     "Name": "F07F",
-    "Description": "",
+    "Description": "unknown",
     "Parameters": [
       {
         "Type": "int",
@@ -3905,8 +3980,8 @@
   {
     "Index": "0x0120",
     "ReturnType": "void",
-    "Name": "set_battle_bit_flag",
-    "Description": "sets param:bit to on in a special battle state flag",
+    "Name": "set_persistent_flag",
+    "Description": "sets param:bit to passed value. this flag persists across transformations and script changes",
     "Parameters": [
       {
         "Type": "int",
@@ -3918,8 +3993,8 @@
   {
     "Index": "0x0121",
     "ReturnType": "void",
-    "Name": "clear_battle_bit_flag",
-    "Description": "sets param:bit to off in a special battle state flag",
+    "Name": "clear_persistent_flag",
+    "Description": "turns off param:bit in the persistent flag",
     "Parameters": [
       {
         "Type": "int",
@@ -3931,8 +4006,8 @@
   {
     "Index": "0x0122",
     "ReturnType": "bool",
-    "Name": "check_battle_bit_flag",
-    "Description": "checks state of param:bit in a special battle state flag",
+    "Name": "check_persistent_flag",
+    "Description": "checks param:bit in the persistent flag",
     "Parameters": [
       {
         "Type": "int",
@@ -4379,7 +4454,7 @@
     "Index": "0x0153",
     "ReturnType": "int",
     "Name": "F153",
-    "Description": "don't know. grep utility is messing up finding these",
+    "Description": "unused. did something in the credits in EO3",
     "Parameters": [
     ]
   },
@@ -4387,7 +4462,7 @@
     "Index": "0x0154",
     "ReturnType": "int",
     "Name": "F154",
-    "Description": "",
+    "Description": "unused. did something in the credits in EO3",
     "Parameters": [
     ]
   },
@@ -4395,79 +4470,169 @@
     "Index": "0x0155",
     "ReturnType": "int",
     "Name": "F155",
-    "Description": "",
+    "Description": "dunno. does something with FOEs",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x0156",
     "ReturnType": "int",
     "Name": "F156",
-    "Description": "",
+    "Description": "dunno. it's never used",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x0157",
     "ReturnType": "int",
     "Name": "F157",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x0158",
     "ReturnType": "int",
     "Name": "F158",
-    "Description": "",
+    "Description": "dunno. this is unused in EO2U, but used exclusively and extensively in EO5. why?",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x0159",
     "ReturnType": "int",
-    "Name": "F159",
-    "Description": "",
+    "Name": "null_F159",
+    "Description": "null and unused. bafflingly, this is still called a few times in EO2U",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x015A",
     "ReturnType": "int",
     "Name": "F15A",
-    "Description": "",
+    "Description": "dunno!!",
     "Parameters": [
     ]
   },
   {
     "Index": "0x015B",
     "ReturnType": "int",
-    "Name": "F15B",
-    "Description": "",
+    "Name": "null_F15B",
+    "Description": "unused and nulled",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x015C",
     "ReturnType": "int",
-    "Name": "F15C",
-    "Description": "",
+    "Name": "null_F15C",
+    "Description": "unused and nulled",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x015D",
     "ReturnType": "int",
-    "Name": "F15D",
-    "Description": "",
+    "Name": "null_F15D",
+    "Description": "unused and nulled",
     "Parameters": [
     ]
   },
   {
     "Index": "0x015E",
     "ReturnType": "int",
-    "Name": "F15E",
-    "Description": "",
+    "Name": "null_F15E",
+    "Description": "unused and nulled",
     "Parameters": [
     ]
   },
@@ -4475,15 +4640,40 @@
     "Index": "0x015F",
     "ReturnType": "int",
     "Name": "F15F",
-    "Description": "",
+    "Description": "dunno",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x0160",
     "ReturnType": "int",
     "Name": "F160",
-    "Description": "",
+    "Description": "dunno. returns some data",
     "Parameters": [
     ]
   },
@@ -4525,6 +4715,26 @@
     "Name": "F165",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4541,6 +4751,16 @@
     "Name": "F167",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4549,6 +4769,21 @@
     "Name": "F168",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4557,6 +4792,31 @@
     "Name": "F169",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4573,6 +4833,31 @@
     "Name": "F16B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4581,6 +4866,21 @@
     "Name": "F16C",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4589,6 +4889,31 @@
     "Name": "F16D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4597,6 +4922,21 @@
     "Name": "F16E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4605,6 +4945,11 @@
     "Name": "F16F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4621,6 +4966,31 @@
     "Name": "F171",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4629,6 +4999,11 @@
     "Name": "F172",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4637,6 +5012,11 @@
     "Name": "F173",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4645,6 +5025,11 @@
     "Name": "F174",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4669,6 +5054,36 @@
     "Name": "F177",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4677,6 +5092,11 @@
     "Name": "F178",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4685,6 +5105,11 @@
     "Name": "F179",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4693,6 +5118,11 @@
     "Name": "F17A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4717,6 +5147,11 @@
     "Name": "F17D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4725,6 +5160,36 @@
     "Name": "F17E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4733,6 +5198,11 @@
     "Name": "F17F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4773,6 +5243,11 @@
     "Name": "F184",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4781,6 +5256,11 @@
     "Name": "F185",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4805,6 +5285,11 @@
     "Name": "F188",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4813,6 +5298,16 @@
     "Name": "F189",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4829,6 +5324,26 @@
     "Name": "F18B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4837,6 +5352,26 @@
     "Name": "F18C",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4845,6 +5380,11 @@
     "Name": "F18D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4869,6 +5409,16 @@
     "Name": "F190",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4973,6 +5523,11 @@
     "Name": "F19D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4981,6 +5536,21 @@
     "Name": "F19E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -4989,6 +5559,16 @@
     "Name": "F19F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5013,6 +5593,11 @@
     "Name": "F1A2",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5021,6 +5606,11 @@
     "Name": "F1A3",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5029,6 +5619,11 @@
     "Name": "F1A4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5037,6 +5632,11 @@
     "Name": "F1A5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5045,6 +5645,21 @@
     "Name": "F1A6",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5061,6 +5676,26 @@
     "Name": "F1A8",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5069,6 +5704,36 @@
     "Name": "F1A9",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5093,6 +5758,11 @@
     "Name": "F1AC",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5101,6 +5771,11 @@
     "Name": "F1AD",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5133,6 +5808,11 @@
     "Name": "F1B1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5149,6 +5829,21 @@
     "Name": "F1B3",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5165,6 +5860,26 @@
     "Name": "F1B5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5181,6 +5896,11 @@
     "Name": "F1B7",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5189,6 +5909,16 @@
     "Name": "F1B8",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5253,6 +5983,21 @@
     "Name": "F1C0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5261,6 +6006,11 @@
     "Name": "F1C1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5277,6 +6027,11 @@
     "Name": "F1C3",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5285,6 +6040,11 @@
     "Name": "F1C4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5325,6 +6085,11 @@
     "Name": "F1C9",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5333,6 +6098,11 @@
     "Name": "F1CA",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5365,6 +6135,21 @@
     "Name": "F1CE",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5373,6 +6158,26 @@
     "Name": "F1CF",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5381,6 +6186,36 @@
     "Name": "F1D0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5389,6 +6224,36 @@
     "Name": "F1D1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5437,6 +6302,36 @@
     "Name": "F1D7",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5461,6 +6356,16 @@
     "Name": "F1DA",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5477,6 +6382,41 @@
     "Name": "F1DC",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5485,6 +6425,11 @@
     "Name": "F1DD",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5501,6 +6446,36 @@
     "Name": "F1DF",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5509,6 +6484,11 @@
     "Name": "F1E0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5517,6 +6497,16 @@
     "Name": "F1E1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5525,6 +6515,16 @@
     "Name": "F1E2",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5533,6 +6533,26 @@
     "Name": "F1E3",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5541,6 +6561,26 @@
     "Name": "F1E4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5549,6 +6589,21 @@
     "Name": "F1E5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5557,6 +6612,16 @@
     "Name": "F1E6",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5581,6 +6646,11 @@
     "Name": "F1E9",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5597,6 +6667,11 @@
     "Name": "F1EB",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5613,6 +6688,16 @@
     "Name": "F1ED",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5645,6 +6730,11 @@
     "Name": "F1F1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5693,6 +6783,16 @@
     "Name": "F1F7",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5725,6 +6825,16 @@
     "Name": "F1FB",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5733,6 +6843,16 @@
     "Name": "F1FC",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5741,6 +6861,11 @@
     "Name": "F1FD",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5749,6 +6874,11 @@
     "Name": "F1FE",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5773,6 +6903,16 @@
     "Name": "F201",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5781,6 +6921,16 @@
     "Name": "F202",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5789,6 +6939,26 @@
     "Name": "F203",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5797,6 +6967,31 @@
     "Name": "F204",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5813,6 +7008,26 @@
     "Name": "F206",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -5821,6 +7036,11 @@
     "Name": "F207",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7837,6 +9057,16 @@
     "Name": "F303",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7845,6 +9075,11 @@
     "Name": "F304",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7869,6 +9104,21 @@
     "Name": "F307",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7877,6 +9127,16 @@
     "Name": "F308",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7885,6 +9145,16 @@
     "Name": "F309",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7893,6 +9163,11 @@
     "Name": "F30A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7901,6 +9176,11 @@
     "Name": "F30B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7917,6 +9197,36 @@
     "Name": "F30D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7925,6 +9235,11 @@
     "Name": "F30E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7933,6 +9248,11 @@
     "Name": "F30F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7941,6 +9261,16 @@
     "Name": "F310",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7949,6 +9279,16 @@
     "Name": "F311",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7957,6 +9297,11 @@
     "Name": "F312",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7965,6 +9310,11 @@
     "Name": "F313",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7973,6 +9323,16 @@
     "Name": "F314",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7981,6 +9341,11 @@
     "Name": "F315",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7989,6 +9354,11 @@
     "Name": "F316",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -7997,6 +9367,11 @@
     "Name": "F317",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8005,6 +9380,11 @@
     "Name": "F318",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8013,6 +9393,11 @@
     "Name": "F319",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8021,6 +9406,21 @@
     "Name": "F31A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8029,6 +9429,21 @@
     "Name": "F31B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8037,6 +9452,16 @@
     "Name": "F31C",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8045,6 +9470,21 @@
     "Name": "F31D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8053,6 +9493,16 @@
     "Name": "F31E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8061,6 +9511,11 @@
     "Name": "F31F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8069,6 +9524,11 @@
     "Name": "F320",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8085,6 +9545,36 @@
     "Name": "F322",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8093,6 +9583,16 @@
     "Name": "F323",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8109,6 +9609,26 @@
     "Name": "F325",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8117,6 +9637,16 @@
     "Name": "F326",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8189,6 +9719,11 @@
     "Name": "F32F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8221,6 +9756,16 @@
     "Name": "F333",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8229,6 +9774,31 @@
     "Name": "F334",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8237,6 +9807,16 @@
     "Name": "F335",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8245,6 +9825,26 @@
     "Name": "F336",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8253,6 +9853,26 @@
     "Name": "F337",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8261,6 +9881,26 @@
     "Name": "F338",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8269,6 +9909,16 @@
     "Name": "F339",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8277,6 +9927,21 @@
     "Name": "F33A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8285,6 +9950,21 @@
     "Name": "F33B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8293,6 +9973,16 @@
     "Name": "F33C",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8301,6 +9991,21 @@
     "Name": "F33D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8309,14 +10014,64 @@
     "Name": "F33E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x033F",
     "ReturnType": "int",
-    "Name": "F33F",
+    "Name": "F33F_bustup",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "id",
+        "Description": "bust id"
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": "mmmmmaybe delay of some kind?"
+      }
     ]
   },
   {
@@ -8325,6 +10080,26 @@
     "Name": "F340",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8333,6 +10108,26 @@
     "Name": "F341",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8341,6 +10136,16 @@
     "Name": "F342",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8349,6 +10154,21 @@
     "Name": "F343",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8357,6 +10177,16 @@
     "Name": "F344",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8373,6 +10203,11 @@
     "Name": "F346",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8381,6 +10216,11 @@
     "Name": "F347",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8389,6 +10229,11 @@
     "Name": "F348",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8397,6 +10242,16 @@
     "Name": "F349",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8405,6 +10260,11 @@
     "Name": "F34A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8429,6 +10289,11 @@
     "Name": "F34D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8437,6 +10302,16 @@
     "Name": "F34E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8445,6 +10320,11 @@
     "Name": "F34F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8453,6 +10333,11 @@
     "Name": "F350",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8461,6 +10346,11 @@
     "Name": "F351",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8469,6 +10359,11 @@
     "Name": "F352",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8477,6 +10372,16 @@
     "Name": "F353",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8485,6 +10390,11 @@
     "Name": "F354",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8493,6 +10403,16 @@
     "Name": "F355",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8509,6 +10429,26 @@
     "Name": "F357",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8517,6 +10457,46 @@
     "Name": "F358",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param8",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8533,6 +10513,11 @@
     "Name": "F35A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8541,6 +10526,16 @@
     "Name": "F35B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8557,6 +10552,16 @@
     "Name": "F35D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8565,6 +10570,16 @@
     "Name": "F35E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8573,6 +10588,21 @@
     "Name": "F35F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8581,6 +10611,11 @@
     "Name": "F360",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8589,6 +10624,11 @@
     "Name": "F361",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8597,6 +10637,26 @@
     "Name": "F362",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8605,6 +10665,16 @@
     "Name": "F363",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8613,6 +10683,16 @@
     "Name": "F364",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8621,6 +10701,21 @@
     "Name": "F365",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8629,6 +10724,16 @@
     "Name": "F366",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8637,6 +10742,16 @@
     "Name": "F367",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8645,6 +10760,16 @@
     "Name": "F368",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8653,6 +10778,16 @@
     "Name": "F369",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8669,6 +10804,16 @@
     "Name": "F36B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8685,6 +10830,31 @@
     "Name": "F36D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8693,6 +10863,11 @@
     "Name": "F36E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8709,6 +10884,16 @@
     "Name": "F370",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8717,6 +10902,36 @@
     "Name": "F371",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8725,6 +10940,26 @@
     "Name": "F372",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8733,6 +10968,16 @@
     "Name": "F373",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8741,6 +10986,11 @@
     "Name": "F374",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8749,6 +10999,26 @@
     "Name": "F375",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8757,6 +11027,11 @@
     "Name": "F376",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8765,6 +11040,16 @@
     "Name": "F377",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8773,6 +11058,16 @@
     "Name": "F378",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8781,6 +11076,16 @@
     "Name": "F379",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8789,6 +11094,11 @@
     "Name": "F37A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8813,6 +11123,16 @@
     "Name": "F37D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8821,6 +11141,21 @@
     "Name": "F37E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8829,6 +11164,36 @@
     "Name": "F37F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8837,6 +11202,11 @@
     "Name": "F380",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8845,6 +11215,21 @@
     "Name": "F381",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8853,6 +11238,11 @@
     "Name": "F382",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8869,6 +11259,16 @@
     "Name": "F384",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8877,6 +11277,11 @@
     "Name": "F385",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8885,6 +11290,11 @@
     "Name": "F386",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8893,6 +11303,26 @@
     "Name": "F387",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8901,6 +11331,31 @@
     "Name": "F388",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8917,6 +11372,11 @@
     "Name": "F38A",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8925,6 +11385,11 @@
     "Name": "F38B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8941,6 +11406,11 @@
     "Name": "F38D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8949,6 +11419,11 @@
     "Name": "F38E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8957,6 +11432,16 @@
     "Name": "F38F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8965,6 +11450,21 @@
     "Name": "F390",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8973,6 +11473,11 @@
     "Name": "F391",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8981,6 +11486,11 @@
     "Name": "F392",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8989,6 +11499,11 @@
     "Name": "F393",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -8997,6 +11512,41 @@
     "Name": "F394",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9005,6 +11555,11 @@
     "Name": "F395",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9013,6 +11568,11 @@
     "Name": "F396",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9021,6 +11581,16 @@
     "Name": "F397",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9053,6 +11623,11 @@
     "Name": "F39B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9061,6 +11636,21 @@
     "Name": "F39C",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9069,6 +11659,16 @@
     "Name": "F39D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9077,6 +11677,26 @@
     "Name": "F39E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9085,6 +11705,21 @@
     "Name": "F39F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9093,6 +11728,21 @@
     "Name": "F3A0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9101,6 +11751,21 @@
     "Name": "F3A1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9109,6 +11774,16 @@
     "Name": "F3A2",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9117,6 +11792,16 @@
     "Name": "F3A3",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9125,6 +11810,21 @@
     "Name": "F3A4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9133,6 +11833,16 @@
     "Name": "F3A5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9141,6 +11851,16 @@
     "Name": "F3A6",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9149,6 +11869,21 @@
     "Name": "F3A7",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9157,14 +11892,34 @@
     "Name": "F3A8",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
     "Index": "0x03A9",
     "ReturnType": "int",
-    "Name": "F3A9",
-    "Description": "",
+    "Name": "play_sound",
+    "Description": "plays sound param:id in param:bank",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "bank",
+        "Description": "bank to play sound from"
+      },
+      {
+        "Type": "int",
+        "Name": "id",
+        "Description": "sound id"
+      }
     ]
   },
   {
@@ -9173,6 +11928,31 @@
     "Name": "F3AA",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9181,6 +11961,16 @@
     "Name": "F3AB",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9189,6 +11979,16 @@
     "Name": "F3AC",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9205,6 +12005,26 @@
     "Name": "F3AE",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9221,6 +12041,21 @@
     "Name": "F3B0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9229,6 +12064,21 @@
     "Name": "F3B1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9237,6 +12087,16 @@
     "Name": "F3B2",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9245,6 +12105,21 @@
     "Name": "F3B3",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9253,6 +12128,21 @@
     "Name": "F3B4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9261,6 +12151,21 @@
     "Name": "F3B5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9277,6 +12182,11 @@
     "Name": "F3B7",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9285,6 +12195,11 @@
     "Name": "F3B8",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9293,6 +12208,26 @@
     "Name": "F3B9",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9301,6 +12236,41 @@
     "Name": "F3BA",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9309,6 +12279,11 @@
     "Name": "F3BB",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9317,6 +12292,11 @@
     "Name": "F3BC",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9325,6 +12305,36 @@
     "Name": "F3BD",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9333,6 +12343,31 @@
     "Name": "F3BE",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9341,6 +12376,21 @@
     "Name": "F3BF",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9349,6 +12399,11 @@
     "Name": "F3C0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9357,6 +12412,26 @@
     "Name": "F3C1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9365,6 +12440,21 @@
     "Name": "F3C2",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9373,6 +12463,16 @@
     "Name": "F3C3",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9381,6 +12481,16 @@
     "Name": "F3C4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9389,6 +12499,26 @@
     "Name": "F3C5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9397,6 +12527,21 @@
     "Name": "F3C6",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9405,6 +12550,26 @@
     "Name": "F3C7",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9413,6 +12578,16 @@
     "Name": "F3C8",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9421,6 +12596,41 @@
     "Name": "F3C9",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9429,6 +12639,16 @@
     "Name": "F3CA",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9437,6 +12657,16 @@
     "Name": "F3CB",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9477,6 +12707,31 @@
     "Name": "F3D0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9485,6 +12740,11 @@
     "Name": "F3D1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9605,6 +12865,11 @@
     "Name": "F3E0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9621,6 +12886,26 @@
     "Name": "F3E2",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9637,6 +12922,41 @@
     "Name": "F3E4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param6",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param7",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9645,6 +12965,21 @@
     "Name": "F3E5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9717,6 +13052,16 @@
     "Name": "F3EE",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9733,6 +13078,11 @@
     "Name": "F3F0",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9741,6 +13091,16 @@
     "Name": "F3F1",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9749,6 +13109,16 @@
     "Name": "F3F2",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9765,6 +13135,11 @@
     "Name": "F3F4",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9773,6 +13148,16 @@
     "Name": "F3F5",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9781,6 +13166,11 @@
     "Name": "F3F6",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9813,6 +13203,11 @@
     "Name": "F3FA",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9821,6 +13216,21 @@
     "Name": "F3FB",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9829,6 +13239,21 @@
     "Name": "F3FC",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9861,6 +13286,16 @@
     "Name": "F400",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9869,6 +13304,21 @@
     "Name": "F401",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9877,6 +13327,16 @@
     "Name": "F402",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9901,6 +13361,11 @@
     "Name": "F405",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9909,6 +13374,26 @@
     "Name": "F406",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9917,6 +13402,11 @@
     "Name": "F407",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9933,6 +13423,11 @@
     "Name": "F409",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9949,6 +13444,11 @@
     "Name": "F40B",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9957,6 +13457,26 @@
     "Name": "F40C",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9965,6 +13485,21 @@
     "Name": "F40D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9973,6 +13508,21 @@
     "Name": "F40E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9981,6 +13531,31 @@
     "Name": "F40F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9989,6 +13564,11 @@
     "Name": "F410",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -9997,6 +13577,16 @@
     "Name": "F411",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10005,6 +13595,11 @@
     "Name": "F412",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10021,6 +13616,11 @@
     "Name": "F414",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10029,6 +13629,16 @@
     "Name": "F415",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10037,6 +13647,16 @@
     "Name": "F416",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10045,6 +13665,11 @@
     "Name": "F417",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10053,6 +13678,16 @@
     "Name": "F418",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10061,6 +13696,11 @@
     "Name": "F419",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10085,6 +13725,11 @@
     "Name": "F41C",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10093,6 +13738,11 @@
     "Name": "F41D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10101,6 +13751,11 @@
     "Name": "F41E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10109,6 +13764,11 @@
     "Name": "F41F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10117,6 +13777,11 @@
     "Name": "F420",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10125,6 +13790,16 @@
     "Name": "F421",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10133,6 +13808,16 @@
     "Name": "F422",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10141,6 +13826,11 @@
     "Name": "F423",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10149,6 +13839,11 @@
     "Name": "F424",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10157,6 +13852,16 @@
     "Name": "F425",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10165,6 +13870,26 @@
     "Name": "F426",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10181,6 +13906,16 @@
     "Name": "F428",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10189,6 +13924,16 @@
     "Name": "F429",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10221,6 +13966,11 @@
     "Name": "F42D",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10229,6 +13979,31 @@
     "Name": "F42E",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param4",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param5",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10237,6 +14012,11 @@
     "Name": "F42F",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10245,6 +14025,16 @@
     "Name": "F430",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10253,6 +14043,16 @@
     "Name": "F431",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10269,6 +14069,11 @@
     "Name": "F433",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10277,6 +14082,11 @@
     "Name": "F434",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10285,6 +14095,11 @@
     "Name": "F435",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10293,6 +14108,16 @@
     "Name": "F436",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10301,6 +14126,11 @@
     "Name": "F437",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10309,6 +14139,11 @@
     "Name": "F438",
     "Description": "",
     "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      }
     ]
   },
   {
@@ -10317,54 +14152,21 @@
     "Name": "F439",
     "Description": "",
     "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x043A",
-    "ReturnType": "int",
-    "Name": "F43A",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x043B",
-    "ReturnType": "int",
-    "Name": "F43B",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x043C",
-    "ReturnType": "int",
-    "Name": "F43C",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x043D",
-    "ReturnType": "int",
-    "Name": "F43D",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x043E",
-    "ReturnType": "int",
-    "Name": "F43E",
-    "Description": "",
-    "Parameters": [
-    ]
-  },
-  {
-    "Index": "0x043F",
-    "ReturnType": "int",
-    "Name": "F43F",
-    "Description": "",
-    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
     ]
   }
 ]
