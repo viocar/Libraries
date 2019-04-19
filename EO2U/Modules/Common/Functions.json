@@ -283,7 +283,7 @@
       {
         "Type": "int",
         "Name": "song_id",
-        "Description": "song to play"
+        "Description": "song to play. this value is the song id + 0x1000000"
       },
       {
         "Type": "int",
@@ -1178,23 +1178,23 @@
   {
     "Index": "0x0052",
     "ReturnType": "int",
-    "Name": "F052",
-    "Description": "dunno. something with FOE movement. calls 0x53",
+    "Name": "move_foe",
+    "Description": "moves param:foe to param:x, param:y",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "foe",
+        "Description": "id of foe to move"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "x",
+        "Description": "destination x"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "y",
+        "Description": "destination y"
       }
     ]
   },
@@ -1329,16 +1329,16 @@
   {
     "Index": "0x005E",
     "ReturnType": "int",
-    "Name": "current_x_coordinate",
-    "Description": "returns current x",
+    "Name": "player_x_coord",
+    "Description": "returns current player x",
     "Parameters": [
     ]
   },
   {
     "Index": "0x005F",
     "ReturnType": "int",
-    "Name": "current_y_coordinate",
-    "Description": "returns current y",
+    "Name": "player_y_coord",
+    "Description": "returns current player y",
     "Parameters": [
     ]
   },
@@ -1358,8 +1358,8 @@
   {
     "Index": "0x0061",
     "ReturnType": "int",
-    "Name": "F061",
-    "Description": "returns some FOE value on FOE param:id",
+    "Name": "get_foe_x",
+    "Description": "get x of FOE param:id",
     "Parameters": [
       {
         "Type": "int",
@@ -1371,8 +1371,8 @@
   {
     "Index": "0x0062",
     "ReturnType": "int",
-    "Name": "F062",
-    "Description": "returns some FOE value on FOE param:id",
+    "Name": "get_foe_y",
+    "Description": "get y of FOE param:id",
     "Parameters": [
       {
         "Type": "int",
@@ -1908,18 +1908,18 @@
   {
     "Index": "0x007F",
     "ReturnType": "int",
-    "Name": "F07F",
-    "Description": "unknown",
+    "Name": "set_foe_flag",
+    "Description": "sets flag on foe with param:id to param:flag",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of foe to set on"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "flag",
+        "Description": "flag to set"
       }
     ]
   },
@@ -2509,13 +2509,13 @@
   {
     "Index": "0x00AE",
     "ReturnType": "void",
-    "Name": "target_class",
-    "Description": "targets player characters with param:class_id",
+    "Name": "target_specific_character",
+    "Description": "targets characters with monster param:id",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "class_id",
-        "Description": "class to be targeted. only applies to mainclass."
+        "Name": "id",
+        "Description": "character to target"
       }
     ]
   },
@@ -4510,18 +4510,18 @@
   {
     "Index": "0x0157",
     "ReturnType": "int",
-    "Name": "F157",
-    "Description": "dunno",
+    "Name": "get_foe_at_target_location",
+    "Description": "returns id of foe at param:x, param:y. returns -1 if no foe",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x coordinate"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y coordinate"
       }
     ]
   },
@@ -4529,7 +4529,7 @@
     "Index": "0x0158",
     "ReturnType": "int",
     "Name": "F158",
-    "Description": "dunno. this is unused in EO2U, but used exclusively and extensively in EO5. why?",
+    "Description": "this is a variant of F157 which is used exclusively in EO5. it has a third parameter, which exists in EO2U but seems unused?",
     "Parameters": [
       {
         "Type": "int",
@@ -5216,8 +5216,8 @@
   {
     "Index": "0x0181",
     "ReturnType": "int",
-    "Name": "F181",
-    "Description": "",
+    "Name": "load_foe_value",
+    "Description": "loads some FOE value (stored by 0x185). I'm gonna need a better name for this",
     "Parameters": [
     ]
   },
@@ -5252,14 +5252,14 @@
   },
   {
     "Index": "0x0185",
-    "ReturnType": "int",
-    "Name": "F185",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_foe_value",
+    "Description": "sets some FOE value to param:value. this is the one loaded by 0x181",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "value",
+        "Description": "value to set"
       }
     ]
   },
@@ -5282,95 +5282,95 @@
   {
     "Index": "0x0188",
     "ReturnType": "int",
-    "Name": "F188",
-    "Description": "",
+    "Name": "foe_retrieve",
+    "Description": "retrieves value at param:offset on FOE. this is a byte",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "offset",
+        "Description": "offset to get value from."
       }
     ]
   },
   {
     "Index": "0x0189",
-    "ReturnType": "int",
-    "Name": "F189",
-    "Description": "",
+    "ReturnType": "null",
+    "Name": "foe_store",
+    "Description": "stores param:value at param:offset on FOE. I'm not sure what kind of nasty things you can do with a crazy offset...",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "offset",
+        "Description": "offset for value"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "value",
+        "Description": "value to store. this is a byte"
       }
     ]
   },
   {
     "Index": "0x018A",
-    "ReturnType": "int",
-    "Name": "F18A",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "player_in_battle",
+    "Description": "is the player currently in battle?",
     "Parameters": [
     ]
   },
   {
     "Index": "0x018B",
     "ReturnType": "int",
-    "Name": "F18B",
-    "Description": "",
+    "Name": "player_within_coords",
+    "Description": "is the player within the specified coordinates? this path is bounded by param:lower_x, param:lower_y, param:upper_x, param:upper_y. lower values are inclusive and upper values are exclusive. be careful!",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "lower_x",
+        "Description": "lower x of the path"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "lower_y",
+        "Description": "lower y of the path"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "upper_x",
+        "Description": "upper x of the path"
       },
       {
         "Type": "int",
-        "Name": "param4",
-        "Description": ""
+        "Name": "upper_y",
+        "Description": "upper y of the path"
       }
     ]
   },
   {
     "Index": "0x018C",
-    "ReturnType": "int",
-    "Name": "F18C",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "foe_within_coords",
+    "Description": "is the foe within the specified coordinates? this path is bounded by param:lower_x, param:lower_y, param:upper_x, param:upper_y. lower values are inclusive and upper values are exclusive. be careful!",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "lower_x",
+        "Description": "lower x of the path"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "lower_y",
+        "Description": "lower y of the path"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "upper_x",
+        "Description": "upper x of the path"
       },
       {
         "Type": "int",
-        "Name": "param4",
-        "Description": ""
+        "Name": "upper_y",
+        "Description": "upper y of the path"
       }
     ]
   },
@@ -5406,34 +5406,34 @@
   {
     "Index": "0x0190",
     "ReturnType": "int",
-    "Name": "F190",
-    "Description": "",
+    "Name": "tile_can_be_occupied",
+    "Description": "is the tile at param:x, param:y able to be occupied?",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x coordinate"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y coordinate"
       }
     ]
   },
   {
     "Index": "0x0191",
     "ReturnType": "int",
-    "Name": "F191",
-    "Description": "",
+    "Name": "get_self_x",
+    "Description": "get x of current FOE",
     "Parameters": [
     ]
   },
   {
     "Index": "0x0192",
     "ReturnType": "int",
-    "Name": "F192",
-    "Description": "",
+    "Name": "get_self_y",
+    "Description": "get y of current FOE",
     "Parameters": [
     ]
   },
@@ -5457,7 +5457,7 @@
     "Index": "0x0195",
     "ReturnType": "int",
     "Name": "F195",
-    "Description": "",
+    "Description": "I thiiiiink this is local foe ID (as opposed to global) but",
     "Parameters": [
     ]
   },
@@ -5512,8 +5512,8 @@
   {
     "Index": "0x019C",
     "ReturnType": "int",
-    "Name": "F19C",
-    "Description": "",
+    "Name": "time_until_self_respawns",
+    "Description": "get the time until calling FOE respawns",
     "Parameters": [
     ]
   },
@@ -5555,19 +5555,19 @@
   },
   {
     "Index": "0x019F",
-    "ReturnType": "int",
-    "Name": "F19F",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_return_point",
+    "Description": "sets the FOE's return point to param:x, param:y",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x coordinate"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y coordinate"
       }
     ]
   },
@@ -5582,47 +5582,47 @@
   {
     "Index": "0x01A1",
     "ReturnType": "int",
-    "Name": "F1A1",
-    "Description": "",
+    "Name": "get_this_foe_state",
+    "Description": "gets the state for the monster",
     "Parameters": [
     ]
   },
   {
     "Index": "0x01A2",
-    "ReturnType": "int",
-    "Name": "F1A2",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_this_foe_state",
+    "Description": "sets the state for the monster to param:value",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "value",
+        "Description": "value to set the state to"
       }
     ]
   },
   {
     "Index": "0x01A3",
     "ReturnType": "int",
-    "Name": "F1A3",
-    "Description": "",
+    "Name": "set_this_foe_flag",
+    "Description": "sets param:flag on current FOE",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "flag",
+        "Description": "flag to set"
       }
     ]
   },
   {
     "Index": "0x01A4",
     "ReturnType": "int",
-    "Name": "F1A4",
-    "Description": "",
+    "Name": "clear_this_foe_flag",
+    "Description": "clears param:flag on current FOE",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "flag",
+        "Description": "flag to clear"
       }
     ]
   },
@@ -5980,23 +5980,23 @@
   {
     "Index": "0x01C0",
     "ReturnType": "int",
-    "Name": "F1C0",
-    "Description": "",
+    "Name": "spawn_foe_at_location",
+    "Description": "spawn the FOE at param:x, param:y. not use what param:unknown does, but I suspect the monster won't spawn if it's 0?",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x coordinate"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y coordinate"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "unknown",
+        "Description": "perhaps required to spawn?"
       }
     ]
   },
@@ -6015,9 +6015,9 @@
   },
   {
     "Index": "0x01C2",
-    "ReturnType": "int",
-    "Name": "F1C2",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "pass",
+    "Description": "do nothing",
     "Parameters": [
     ]
   },
@@ -6036,22 +6036,22 @@
   },
   {
     "Index": "0x01C4",
-    "ReturnType": "int",
-    "Name": "F1C4",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "foe_move_direction",
+    "Description": "moves FOE in param:direction",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "direction",
+        "Description": "0 = north, 1 = south, 2 = east, 3 = west. don't know if other directions do anything"
       }
     ]
   },
   {
     "Index": "0x01C5",
     "ReturnType": "int",
-    "Name": "F1C5",
-    "Description": "",
+    "Name": "foe_move_chase_player",
+    "Description": "makes a FOE chase the player",
     "Parameters": [
     ]
   },
@@ -6107,9 +6107,9 @@
   },
   {
     "Index": "0x01CB",
-    "ReturnType": "int",
-    "Name": "F1CB",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "foe_move_go_home",
+    "Description": "makes a FOE move to its spawn point",
     "Parameters": [
     ]
   },
@@ -6124,8 +6124,8 @@
   {
     "Index": "0x01CD",
     "ReturnType": "int",
-    "Name": "F1CD",
-    "Description": "",
+    "Name": "foe_move_return_point",
+    "Description": "return FOE to value saved by 0x019F",
     "Parameters": [
     ]
   },
@@ -6839,19 +6839,19 @@
   },
   {
     "Index": "0x01FC",
-    "ReturnType": "int",
-    "Name": "F1FC",
-    "Description": "",
+    "ReturnType": "bool",
+    "Name": "adjacent_tile_type_in_direction",
+    "Description": "checks if tile in param:direction relative to script caller is param:type",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "direction",
+        "Description": "direction to look. 0 = west, 1 = east, 2 = south, 3 = north"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "type",
+        "Description": "floor type to check"
       }
     ]
   },
@@ -6997,8 +6997,8 @@
   {
     "Index": "0x0205",
     "ReturnType": "int",
-    "Name": "F205",
-    "Description": "",
+    "Name": "get_self_id",
+    "Description": "get script owner's ID",
     "Parameters": [
     ]
   },
@@ -9101,18 +9101,18 @@
   {
     "Index": "0x0307",
     "ReturnType": "int",
-    "Name": "F307",
-    "Description": "",
+    "Name": "get_tile_type",
+    "Description": "gets floor tile type at param:x, param:y. not sure what the last param is",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x parameter"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y parameter"
       },
       {
         "Type": "int",
@@ -9905,19 +9905,19 @@
   },
   {
     "Index": "0x0339",
-    "ReturnType": "int",
-    "Name": "F339",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "offset_foe_height",
+    "Description": "causes foe with param:id to have a height offset by param:offset. positive values will offset the foe upward",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of foe"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "offset",
+        "Description": "amount to offset by"
       }
     ]
   },
@@ -11620,13 +11620,13 @@
   {
     "Index": "0x039B",
     "ReturnType": "int",
-    "Name": "F39B",
-    "Description": "",
+    "Name": "clear_hazards_by_foe",
+    "Description": "clears floor hazards by foe with param:id",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "foe id"
       }
     ]
   },
@@ -11702,23 +11702,23 @@
   {
     "Index": "0x039F",
     "ReturnType": "int",
-    "Name": "F39F",
-    "Description": "",
+    "Name": "inflict_or_cure_ailment_on_foe",
+    "Description": "if param:inflict is true, inflicts param:ailment on foe with param:id. otherwise, cures that ",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id to inflict on"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "ailment",
+        "Description": "ailment to inflict"
       },
       {
-        "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Type": "bool",
+        "Name": "inflict",
+        "Description": "does it inflict or cure?"
       }
     ]
   },
@@ -11747,24 +11747,24 @@
   },
   {
     "Index": "0x03A1",
-    "ReturnType": "int",
-    "Name": "F3A1",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "damage_foe",
+    "Description": "reduces the HP of foe with param:id by param:percent. not sure what the last one does. displays the HP bar after param:delay has elapsed (I think this is frames?)",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of foe to reduce"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "percent",
+        "Description": "percent to reduce by"
       },
       {
         "Type": "int",
-        "Name": "param3",
-        "Description": ""
+        "Name": "delay",
+        "Description": "how long to delay the hp bar for"
       }
     ]
   },
@@ -11888,19 +11888,19 @@
   },
   {
     "Index": "0x03A8",
-    "ReturnType": "int",
-    "Name": "F3A8",
-    "Description": "",
+    "ReturnType": "void",
+    "Name": "set_foe_special_state",
+    "Description": "sets foe with param:id to param:state",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "id",
+        "Description": "id of foe to set"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "state",
+        "Description": "state to set it to"
       }
     ]
   },
@@ -11976,18 +11976,18 @@
   {
     "Index": "0x03AC",
     "ReturnType": "int",
-    "Name": "F3AC",
-    "Description": "",
+    "Name": "floor_is_hazardous",
+    "Description": "is the floor at param:x, param:y either on fire from salamanders or did the grabbing tentacle grab this area?",
     "Parameters": [
       {
         "Type": "int",
-        "Name": "param1",
-        "Description": ""
+        "Name": "x",
+        "Description": "x coordinate"
       },
       {
         "Type": "int",
-        "Name": "param2",
-        "Description": ""
+        "Name": "y",
+        "Description": "y coordinate"
       }
     ]
   },
@@ -14150,6 +14150,29 @@
     "Index": "0x0439",
     "ReturnType": "int",
     "Name": "F439",
+    "Description": "",
+    "Parameters": [
+      {
+        "Type": "int",
+        "Name": "param1",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param2",
+        "Description": ""
+      },
+      {
+        "Type": "int",
+        "Name": "param3",
+        "Description": ""
+      }
+    ]
+  },    
+  { 
+    "Index": "0x04C8",
+    "ReturnType": "int",
+    "Name": "F4C8",
     "Description": "",
     "Parameters": [
       {
