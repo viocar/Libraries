@@ -2830,8 +2830,8 @@
   {
     "Index": "0x00C9",
     "ReturnType": "bool",
-    "Name": "ally_no_ailment_check",
-    "Description": "check all allies and return true if anyone doesn't have param:ailment",
+    "Name": "ally_all_ailment_check",
+    "Description": "check all allies and return true if everyone has param:ailment",
     "Parameters": [
       {
         "Type": "int",
@@ -2843,8 +2843,8 @@
   {
     "Index": "0x00CA",
     "ReturnType": "int",
-    "Name": "enemy_no_ailment_check",
-    "Description": "check all enemies and return true if anyone doesn't have param:ailment",
+    "Name": "enemy_all_ailment_check",
+    "Description": "check all enemies and return true if everyone has param:ailment",
     "Parameters": [
       {
         "Type": "int",
